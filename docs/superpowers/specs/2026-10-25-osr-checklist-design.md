@@ -228,9 +228,11 @@ The script (TypeScript, `scripts/extract/`, run with Node) sends the four PDFs t
 **OpenAI Responses API** as file inputs, asking for strict structured JSON (Zod schema)
 of the merged **Appendix F inspection card**: sections in order; for each line: card text,
 rule numbers, per-category placement, and an `uncertain` reason. Page numbers are not
-asked of the model; the script finds them in the `pdftotext` output. Model: env
-`OSR_MODEL`, default `gpt-5.5`, reasoning effort high. *(Owner switched from Claude to
-OpenAI on 2026-10-25.)*
+asked of the model; the script finds them in the `pdftotext` output. Models per step (owner's
+choice, 2026-10-25, for cost): structure `gpt-6.1-sol` at medium effort; explanations and
+drawings `gpt-6-luna` at low effort. Overridable via `OSR_MODEL_STRUCTURE`,
+`OSR_EFFORT_STRUCTURE`, `OSR_MODEL_TEXT`, `OSR_EFFORT_TEXT` (GitHub repository variables).
+*(Owner switched from Claude to OpenAI on 2026-10-25.)*
 
 ### 6.3 Merge across categories
 Card lines from the four categories are merged into items by matching rule numbers
@@ -268,7 +270,9 @@ explanation for that category. Drawings are reused whenever the id matches.
 
 ### 6.6 Secrets and cost
 `OPENAI_API_KEY` as a repository secret. One edition run is ~4 PDFs × a few
-calls plus generation for new items; expected low single-digit USD. The workflow is
+calls plus one explanation and one drawing request per new or changed item (~140 on a first
+run). Estimated ~$1–2 for a first run with the models above (a first run on `gpt-5.5` at high
+effort was estimated at $30–80 and cancelled), less for later editions. The workflow is
 never triggered by pushes or PRs, so the secret is not exposed to forks.
 
 ### 6.7 Bootstrapping v1

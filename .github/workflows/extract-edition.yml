@@ -30,6 +30,11 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EDITION: ${{ inputs.edition }}
+          # Optional repository variables; defaults are in scripts/extract/settings.ts.
+          OSR_MODEL_STRUCTURE: ${{ vars.OSR_MODEL_STRUCTURE }}
+          OSR_EFFORT_STRUCTURE: ${{ vars.OSR_EFFORT_STRUCTURE }}
+          OSR_MODEL_TEXT: ${{ vars.OSR_MODEL_TEXT }}
+          OSR_EFFORT_TEXT: ${{ vars.OSR_EFFORT_TEXT }}
         run: npm run extract -- --edition "$EDITION" --summary-out "$RUNNER_TEMP/pr-body.md"
       - name: Test and build
         id: build

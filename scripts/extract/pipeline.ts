@@ -15,6 +15,8 @@ export interface Deps {
   generateExplanations: (item: ExtractedItem, ruleTextByCat: Partial<Record<Category, string>>) => Promise<Partial<Record<Category, Localized>>>;
   generateDrawing: (item: ExtractedItem) => Promise<string>;
   existingDrawings: Set<string>;
+  /** Progress lines for the workflow log. */
+  log?: (line: string) => void;
 }
 
 export interface PipelineInput {
@@ -76,6 +78,8 @@ export async function runPipeline(input: PipelineInput, deps: Deps): Promise<Pip
   const changed: string[] = [];
   const carried: string[] = [];
 
+  let finished = 0;
+  deps.log?.(`structure: ${extraction.items.length} items in ${extraction.sections.length} sections`);
   const items = await mapLimit(extraction.items, CONCURRENCY, async (extracted): Promise<Item> => {
     const previous = previousById.get(extracted.id);
     const categories = categoriesOf(extracted.perCategory);
@@ -130,6 +134,7 @@ export async function runPipeline(input: PipelineInput, deps: Deps): Promise<Pip
       else changed.push(extracted.id);
     }
 
+    deps.log?.(`item ${++finished}/${extraction.items.length}: ${extracted.id}`);
     return { id: extracted.id, drawing, rules: extracted.rules, name: extracted.name, applies };
   });
 

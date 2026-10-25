@@ -170,6 +170,18 @@ describe("runPipeline", () => {
     expect(calls.explanations).toEqual([]);
   });
 
+  it("reports progress once per finished item", async () => {
+    const lines: string[] = [];
+    const { deps } = fakeDeps(
+      extraction([extracted("jackstays", ["4.04.2"], { osr3: "a" }), extracted("foghorn", ["4.09"], { osr3: "b" }, 20)]),
+      { log: (line) => lines.push(line) },
+    );
+    await run(deps, []);
+    const progress = lines.filter((l) => /^item \d+\/2: /.test(l));
+    expect(progress.map((l) => l.split(":")[0])).toEqual(["item 1/2", "item 2/2"]);
+    expect(progress.map((l) => l.split(": ")[1]).sort()).toEqual(["foghorn", "jackstays"]);
+  });
+
   it("keeps two items with the same rule numbers apart", async () => {
     const { deps } = fakeDeps(
       extraction([

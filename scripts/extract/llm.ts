@@ -2,9 +2,13 @@ import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod/v4";
 import { CATEGORIES, CATEGORY_LABEL, type Category, type Localized } from "../../src/lib/categories";
+import { stepSettings, type Step } from "./settings";
 import type { ExtractedItem, Extraction } from "./types";
 
-const model = () => process.env.OSR_MODEL ?? "gpt-5.5";
+const settingsFor = (step: Step) => {
+  const { model, effort } = stepSettings(step, process.env);
+  return { model, reasoning: { effort } };
+};
 const LONG_REQUEST = { timeout: 30 * 60 * 1000 };
 
 // OpenAI strict structured outputs require every field; optional ones are expressed as nullable.
@@ -63,8 +67,7 @@ export async function extractStructure(
 ): Promise<Extraction> {
   const response = await client.responses.parse(
     {
-      model: model(),
-      reasoning: { effort: "high" },
+      ...settingsFor("structure"),
       input: [
         {
           role: "user",
@@ -109,8 +112,7 @@ export async function generateExplanations(
     .join("\n\n");
   const response = await client.responses.parse(
     {
-      model: model(),
-      reasoning: { effort: "high" },
+      ...settingsFor("text"),
       input: `${sources}
 
 Item: "${item.name.en}" (OSR ${item.rules.join(", ")}).
@@ -131,8 +133,7 @@ Set every category not listed to null.`,
 export async function generateDrawing(client: OpenAI, item: ExtractedItem): Promise<string> {
   const response = await client.responses.create(
     {
-      model: model(),
-      reasoning: { effort: "high" },
+      ...settingsFor("text"),
       input: `Draw a simple, recognisable line drawing of this piece of sailing safety equipment: "${item.name.en}" (OSR ${item.rules.join(", ")}).
 
 Rules: one <svg> element with xmlns="http://www.w3.org/2000/svg" and viewBox="0 0 200 200"; stroke-only line art (fill="none"), stroke="currentColor", stroke-width 3–5, round caps and joins; no text or letters, no <text>, <style>, <script>, <image> or external references; under 8 KB. Reply with the SVG only.`,
