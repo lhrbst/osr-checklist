@@ -11,8 +11,8 @@ The PR description starts with everything the pipeline could not verify:
   Usually the model misread a rule number or the category.
 - **rule … in extract but on no card line**: a Section 4/5 rule exists in the PDF but no item covers it. Often this is
   fine (not every rule has a card line). Check whether a card line was missed.
-- **no page found … link points to page 1**: fix `pages` by hand.
-- **explanation missing**: replace the placeholder text in both languages.
+- **no page found**: the item has `pages: []`, so the build fails until you add the right page number(s).
+- **explanation missing**: the placeholder text fails the build; write the explanation in both languages.
 - **drawing rejected**: the item uses the placeholder drawing. Add `src/content/drawings/<id>.svg` and set `drawing`.
 - **model unsure**: check that line against the PDFs.
 - **build validation**: the site would not build; fix the item named.
@@ -30,6 +30,8 @@ For each file in `src/content/items/<edition>/`, open the official PDF for each 
 - [ ] **Explanation (DE)**: same content, in natural German sailing terms. The name has the English term in brackets.
 - [ ] **Section and order**: the item sits under the same heading and in the same order as on that category's card.
 - [ ] **Drawing**: recognisable, with no text in it.
+
+Items listed as **Carried over unchanged** kept their explanation because both the card line and the regulation text on their pages are unchanged; a quick skim is enough.
 
 ## 3. Fixing things
 

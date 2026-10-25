@@ -58,3 +58,12 @@ describe("validateContent", () => {
     expect(validateContent(input).some((e) => e.includes("order 40") && e.includes("osr3"))).toBe(true);
   });
 });
+
+describe("validateContent placeholders", () => {
+  it("rejects the pipeline's missing-explanation placeholder", async () => {
+    const { MISSING_EXPLANATION } = await import("../../src/lib/validate");
+    const input = valid();
+    input.items[0].item.applies.osr3!.explanation = { ...MISSING_EXPLANATION };
+    expect(validateContent(input).some((e) => e.includes("jackstays") && e.includes("placeholder"))).toBe(true);
+  });
+});

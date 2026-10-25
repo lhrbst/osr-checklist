@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import type { Category, Localized } from "../../src/lib/categories";
 import type { Item } from "../../src/lib/schemas";
-import { cardHash } from "../../scripts/extract/hash";
+import { cardHash, textHash } from "../../scripts/extract/hash";
 import { runPipeline, type Deps } from "../../scripts/extract/pipeline";
 import type { ExtractedItem, Extraction } from "../../scripts/extract/types";
 
@@ -40,8 +40,8 @@ const previousJackstays: Item = {
   rules: ["4.04.2"],
   name: text("jackstays"),
   applies: {
-    osr2: { section: "rigged", order: 10, pages: [3], cardHash: cardHash("Jack stays each side"), explanation: text("old osr2") },
-    osr3: { section: "rigged", order: 10, pages: [3], cardHash: cardHash("Jack stays each side"), explanation: text("old osr3") },
+    osr2: { section: "rigged", order: 10, pages: [3], cardHash: cardHash("Jack stays each side"), sourceHash: textHash(pages[2]), explanation: text("old osr2") },
+    osr3: { section: "rigged", order: 10, pages: [3], cardHash: cardHash("Jack stays each side"), sourceHash: textHash(pages[2]), explanation: text("old osr3") },
   },
 };
 
@@ -115,8 +115,59 @@ describe("runPipeline", () => {
     );
     const result = await run(deps, []);
     expect(result.items.find((i) => i.id === "jackstays")!.applies.osr3!.pages).toEqual([3]);
-    expect(result.items.find((i) => i.id === "ghost")!.applies.osr3!.pages).toEqual([1]);
+    expect(result.items.find((i) => i.id === "ghost")!.applies.osr3!.pages).toEqual([]);
     expect(result.attention.some((a) => a.itemId === "ghost" && a.message.includes("no page"))).toBe(true);
+    expect(result.attention.some((a) => a.message.startsWith("build validation") && a.message.includes("ghost"))).toBe(true);
+  });
+
+  it("leaves a missing explanation in a state the build rejects", async () => {
+    const { deps } = fakeDeps(extraction([extracted("foghorn", ["4.09"], { osr3: "Foghorn" })]), {
+      generateExplanations: async () => ({}),
+    });
+    const result = await run(deps, []);
+    expect(result.attention.some((a) => a.message.startsWith("build validation") && a.message.includes("foghorn"))).toBe(true);
+  });
+
+  it.each(["../../evil", "a/b", "Upper-Case"])("refuses to write an item with the unsafe id %s", async (id) => {
+    const { deps } = fakeDeps(extraction([extracted(id, ["4.09"], { osr3: "Foghorn" })]));
+    await expect(run(deps, [])).rejects.toThrow(/invalid item/);
+  });
+
+  it("refuses duplicate item ids", async () => {
+    const { deps } = fakeDeps(
+      extraction([extracted("foghorn", ["4.09"], { osr3: "a" }), extracted("foghorn", ["4.09"], { osr3: "b" }, 20)]),
+    );
+    await expect(run(deps, [])).rejects.toThrow(/duplicate item id "foghorn"/);
+  });
+
+  it("refuses an unsafe section id", async () => {
+    const result = extraction([extracted("foghorn", ["4.09"], { osr3: "Foghorn" })]);
+    result.sections[0].id = "../x";
+    result.items[0].perCategory.osr3!.section = "../x";
+    const { deps } = fakeDeps(result);
+    await expect(run(deps, [])).rejects.toThrow(/invalid section id/);
+  });
+
+  it("regenerates a carried explanation when the regulation text changed under an unchanged card line", async () => {
+    const { deps: first } = fakeDeps(extraction([extracted("jackstays", ["4.04.2"], { osr3: "Jack stays each side" })]));
+    const previous = (await run(first, [])).items;
+    const changedPages = [...pages];
+    changedPages[2] = changedPages[2].replace("Jackstays on each side deck", "Jackstays of 6 mm wire on each side deck");
+    const { deps, calls } = fakeDeps(extraction([extracted("jackstays", ["4.04.2"], { osr3: "Jack stays each side" })]));
+    const result = await runPipeline(
+      { edition, pdfs, pagesByCat: { ...pagesByCat, osr3: changedPages }, previousItems: previous },
+      deps,
+    );
+    expect(calls.explanations).toEqual([{ id: "jackstays", categories: ["osr3"] }]);
+    expect(result.diff.changed).toEqual(["jackstays"]);
+  });
+
+  it("carries an explanation when both card line and regulation text are unchanged", async () => {
+    const { deps: first } = fakeDeps(extraction([extracted("jackstays", ["4.04.2"], { osr3: "Jack stays each side" })]));
+    const previous = (await run(first, [])).items;
+    const { deps, calls } = fakeDeps(extraction([extracted("jackstays", ["4.04.2"], { osr3: "Jack stays each side" })]));
+    await run(deps, previous);
+    expect(calls.explanations).toEqual([]);
   });
 
   it("keeps two items with the same rule numbers apart", async () => {

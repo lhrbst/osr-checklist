@@ -1,5 +1,11 @@
-import { CATEGORIES, LANGS } from "./categories";
+import { CATEGORIES, LANGS, type Localized } from "./categories";
 import type { Edition, Item } from "./schemas";
+
+/** Written by the extraction pipeline when the model gave no explanation; must never be published. */
+export const MISSING_EXPLANATION: Localized = {
+  en: "(Explanation missing, see review PR.)",
+  de: "(Erklärung fehlt, siehe Review-PR.)",
+};
 
 export interface ContentInput {
   editions: Edition[];
@@ -35,6 +41,9 @@ export function validateContent({ editions, items, drawingIds }: ContentInput): 
         if (!entry.explanation[lang]?.trim()) {
           errors.push(`${where} [${category}]: explanation.${lang} is empty`);
         }
+      }
+      if (LANGS.some((lang) => entry.explanation[lang] === MISSING_EXPLANATION[lang])) {
+        errors.push(`${where} [${category}]: explanation is still the placeholder`);
       }
       if (entry.pages.length === 0) {
         errors.push(`${where} [${category}]: no page`);

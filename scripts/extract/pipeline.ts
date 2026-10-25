@@ -1,13 +1,12 @@
 import { CATEGORIES, type Category, type Localized } from "../../src/lib/categories";
-import type { Edition, Item } from "../../src/lib/schemas";
-import { validateContent } from "../../src/lib/validate";
-import { cardHash } from "./hash";
+import { ID_PATTERN, type Edition, type Item } from "../../src/lib/schemas";
+import { MISSING_EXPLANATION, validateContent } from "../../src/lib/validate";
+import { cardHash, textHash } from "./hash";
 import { crossCheck, locatePages } from "./pages";
 import { sanitizeSvg } from "./svg";
 import type { Attention, ExtractedItem, Extraction } from "./types";
 
 export const PLACEHOLDER_DRAWING = "placeholder";
-const MISSING_EXPLANATION: Localized = { en: "(Explanation missing, see review PR.)", de: "(Erklärung fehlt, siehe Review-PR.)" };
 const CONCURRENCY = 4;
 
 /** The claude.ts calls with the client already bound, plus what is already on disk. */
@@ -48,6 +47,19 @@ async function mapLimit<T, R>(values: T[], limit: number, fn: (value: T) => Prom
   return results;
 }
 
+/** Ids become file names and URL parts and must be unique; anything else aborts before files are written. */
+function assertSafeIds(extraction: Extraction): void {
+  const seen = new Set<string>();
+  for (const item of extraction.items) {
+    if (!ID_PATTERN.test(item.id)) throw new Error(`invalid item id "${item.id}"`);
+    if (seen.has(item.id)) throw new Error(`duplicate item id "${item.id}"`);
+    seen.add(item.id);
+  }
+  for (const section of extraction.sections) {
+    if (!ID_PATTERN.test(section.id)) throw new Error(`invalid section id "${section.id}"`);
+  }
+}
+
 const categoriesOf = (applies: object) => CATEGORIES.filter((c) => c in applies && (applies as Record<string, unknown>)[c]);
 
 export async function runPipeline(input: PipelineInput, deps: Deps): Promise<PipelineResult> {
@@ -58,6 +70,7 @@ export async function runPipeline(input: PipelineInput, deps: Deps): Promise<Pip
     previousItems.map((i) => ({ id: i.id, rules: i.rules, name: i.name })),
   );
 
+  assertSafeIds(extraction);
   const attention: Attention[] = crossCheck(extraction.items, pagesByCat);
   const drawings: Record<string, string> = {};
   const changed: string[] = [];
@@ -71,22 +84,24 @@ export async function runPipeline(input: PipelineInput, deps: Deps): Promise<Pip
 
     for (const category of categories) {
       const placement = extracted.perCategory[category]!;
-      let pages = [...new Set(extracted.rules.flatMap((r) => locatePages(r, pagesByCat[category])))].sort((a, b) => a - b);
+      const pages = [...new Set(extracted.rules.flatMap((r) => locatePages(r, pagesByCat[category])))].sort((a, b) => a - b);
       if (pages.length === 0) {
-        attention.push({ itemId: extracted.id, category, message: `no page found for OSR ${extracted.rules.join(", ")}; link points to page 1` });
-        pages = [1];
+        attention.push({ itemId: extracted.id, category, message: `no page found for OSR ${extracted.rules.join(", ")}; add pages by hand` });
       }
       const hash = cardHash(placement.cardLine);
+      const ruleText = pages.map((p) => pagesByCat[category][p - 1] ?? "").join("\n");
+      const sourceHash = textHash(ruleText);
       const before = previous?.applies[category];
-      const keep = before?.cardHash === hash;
+      const keep = before !== undefined && before.cardHash === hash && before.sourceHash === sourceHash;
       applies[category] = {
         section: placement.section,
         order: placement.order,
         pages,
         cardHash: hash,
+        sourceHash,
         explanation: keep ? before.explanation : MISSING_EXPLANATION,
       };
-      if (!keep) toGenerate[category] = pages.map((p) => pagesByCat[category][p - 1] ?? "").join("\n");
+      if (!keep) toGenerate[category] = ruleText;
     }
 
     if (Object.keys(toGenerate).length > 0) {

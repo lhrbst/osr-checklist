@@ -2,6 +2,9 @@ import { z } from "astro/zod";
 import { CATEGORIES } from "./categories";
 
 export const RULE_PATTERN = /^\d+\.\d+(\.\d+)?$/;
+/** Item and section ids: kebab-case, safe as file names and URL parts. */
+export const ID_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const HASH_PATTERN = /^sha256:[0-9a-f]{64}$/;
 
 export const localizedSchema = z.object({
   en: z.string().min(1),
@@ -12,12 +15,14 @@ const categoryEntrySchema = z.object({
   section: z.string().min(1),
   order: z.number().int(),
   pages: z.array(z.number().int().positive()).min(1),
-  cardHash: z.string().regex(/^sha256:[0-9a-f]{64}$/),
+  cardHash: z.string().regex(HASH_PATTERN),
+  /** Fingerprint of the regulation text on `pages`; a change forces a new explanation. */
+  sourceHash: z.string().regex(HASH_PATTERN).optional(),
   explanation: localizedSchema,
 });
 
 export const itemSchema = z.object({
-  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+  id: z.string().regex(ID_PATTERN),
   drawing: z.string().min(1),
   rules: z.array(z.string().regex(RULE_PATTERN)).min(1),
   name: localizedSchema,
@@ -44,7 +49,7 @@ export const editionSchema = z.object({
   sections: z
     .array(
       z.object({
-        id: z.string().min(1),
+        id: z.string().regex(ID_PATTERN),
         title: localizedSchema,
         officialTitle: z.string().min(1),
       }),
