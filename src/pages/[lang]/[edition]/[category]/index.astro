@@ -1,0 +1,88 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../../../layouts/Base.astro";
+import TopBar from "../../../../components/TopBar.astro";
+import ItemCard from "../../../../components/ItemCard.astro";
+import Disclaimer from "../../../../components/Disclaimer.astro";
+import Footer from "../../../../components/Footer.astro";
+import { CATEGORIES, CATEGORY_LABEL, LANGS, type Category, type Lang } from "../../../../lib/categories";
+import type { Edition, Item } from "../../../../lib/schemas";
+import { buildChecklist } from "../../../../lib/checklist";
+import { drawings } from "../../../../lib/drawings";
+import { validateContent } from "../../../../lib/validate";
+import { formatDate, t } from "../../../../i18n/ui";
+
+export async function getStaticPaths() {
+  const editions = (await getCollection("editions")).map((e) => e.data);
+  const items = (await getCollection("items")).map((e) => ({ edition: e.id.split("/")[0], item: e.data }));
+  const errors = validateContent({ editions, items, drawingIds: new Set(Object.keys(drawings)) });
+  if (errors.length > 0) throw new Error(`Content validation failed:\n${errors.join("\n")}`);
+
+  return LANGS.flatMap((lang) =>
+    editions.flatMap((edition) =>
+      CATEGORIES.map((category) => ({
+        params: { lang, edition: edition.id, category },
+        props: { edition, editions, items: items.filter((i) => i.edition === edition.id).map((i) => i.item) },
+      })),
+    ),
+  );
+}
+
+interface Props {
+  edition: Edition;
+  editions: Edition[];
+  items: Item[];
+}
+const { edition, editions, items } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const category = Astro.params.category as Category;
+const sections = buildChecklist(edition, items, category);
+const pdfUrl = edition.pdfs[category];
+---
+
+<Base lang={lang} title={`${CATEGORY_LABEL[category][lang]} · ${edition.label[lang]} · ${t(lang, "title")}`}>
+  <TopBar lang={lang} edition={edition} editions={editions} category={category} />
+  <main>
+    <h1>{CATEGORY_LABEL[category][lang]} · {edition.label[lang]}</h1>
+    <p class="meta">
+      {t(lang, "inForceFrom")}
+      {formatDate(lang, edition.effectiveFrom)} ·
+      <a href={pdfUrl} target="_blank" rel="noopener">{t(lang, "officialPdf")}</a>
+    </p>
+    <Disclaimer lang={lang} />
+    {
+      sections.map(({ section, items }) => (
+        <section>
+          <h2>{section.title[lang]}</h2>
+          <div class="grid">
+            {items.map((item) => (
+              <ItemCard item={item} lang={lang} category={category} pdfUrl={pdfUrl} />
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+  <Footer lang={lang} />
+</Base>
+
+<style>
+  h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0.25rem;
+  }
+  .meta {
+    color: var(--muted);
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 0.75rem;
+  }
+</style>

@@ -1,0 +1,28 @@
+{
+  "name": "osr-checklist",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "extract": "tsx scripts/extract/run.ts"
+  },
+  "dependencies": {
+    "astro": "^5.18.2",
+    "fast-xml-parser": "^5.11.2",
+    "openai": "^7.43.0",
+    "yaml": "^2.9.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

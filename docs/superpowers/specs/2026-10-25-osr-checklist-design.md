@@ -224,12 +224,13 @@ pre-filled edition manifest). It:
 It never pushes to `main`. Merging the PR publishes via the normal deploy workflow.
 
 ### 6.2 Extraction (per category PDF)
-The script (TypeScript, `scripts/extract/`, run with Node) sends each PDF to the
-Claude API as a document input, asking for structured JSON (tool use / JSON schema)
-of the **Appendix F inspection card**: sections in order; for each line: card text,
-rule numbers, the PDF page(s) where each rule's full text appears in *this* extract,
-and an `uncertain` flag with reason. Model: a current Claude model
-(e.g. `claude-opus-5-5`); configurable via env var.
+The script (TypeScript, `scripts/extract/`, run with Node) sends the four PDFs to the
+**OpenAI Responses API** as file inputs, asking for strict structured JSON (Zod schema)
+of the merged **Appendix F inspection card**: sections in order; for each line: card text,
+rule numbers, per-category placement, and an `uncertain` reason. Page numbers are not
+asked of the model; the script finds them in the `pdftotext` output. Model: env
+`OSR_MODEL`, default `gpt-5.5`, reasoning effort high. *(Owner switched from Claude to
+OpenAI on 2026-10-25.)*
 
 ### 6.3 Merge across categories
 Card lines from the four categories are merged into items by matching rule numbers
@@ -266,7 +267,7 @@ explanation for that category. Drawings are reused whenever the id matches.
   `<script>`, event handlers or external hrefs.
 
 ### 6.6 Secrets and cost
-`ANTHROPIC_API_KEY` as a repository secret. One edition run is ~4 PDFs × a few
+`OPENAI_API_KEY` as a repository secret. One edition run is ~4 PDFs × a few
 calls plus generation for new items; expected low single-digit USD. The workflow is
 never triggered by pushes or PRs, so the secret is not exposed to forks.
 
@@ -325,7 +326,7 @@ recognisable. Fixes are made as commits on the same PR branch before merging. A
 - Every extraction is a GitHub Action that ends in a pull request; the owner reviews
   it; merging publishes. No unreviewed content goes live.
 
-**Builder's / Claude's calls (open to change):**
+**Builder's calls (open to change):**
 - Astro + content collections; YAML data files; pre-rendered per lang × edition × category.
 - Extraction opens a PR, never publishes directly.
 - Drawings as LLM-written SVG line art, text-free.

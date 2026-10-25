@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import { LANGS, type Lang } from "../lib/categories";
+import { pageUrl } from "../lib/links";
+import { t } from "../i18n/ui";
+import Base from "../layouts/Base.astro";
+
+const { lang } = Astro.props as { lang?: Lang };
+const editions = (await getCollection("editions")).map((e) => e.data);
+const serialized = JSON.stringify(
+  editions.map((e) => ({ id: e.id, effectiveFrom: e.effectiveFrom.toISOString(), effectiveTo: e.effectiveTo.toISOString() })),
+);
+const base = import.meta.env.BASE_URL;
+const langs = lang ? [lang] : [...LANGS];
+---
+
+<Base lang={lang ?? "en"} title={t(lang ?? "en", "title")}>
+  <main id="redirect" data-editions={serialized} data-base={base} data-lang={lang}>
+    <noscript>
+      <h1>{t(lang ?? "en", "chooseChecklist")}</h1>
+      <ul>
+        {
+          langs.flatMap((l) =>
+            editions.map((e) => (
+              <li>
+                <a href={pageUrl(base, l, e.id, "osr3")}>
+                  {t(l, "title")} · {e.label[l]}
+                </a>
+              </li>
+            )),
+          )
+        }
+      </ul>
+    </noscript>
+  </main>
+</Base>
+
+<script>
+  import { redirectTarget } from "../lib/redirect";
+  import type { Lang } from "../lib/categories";
+
+  const el = document.getElementById("redirect")!;
+  location.replace(
+    redirectTarget({
+      editions: JSON.parse(el.dataset.editions!),
+      today: new Date(),
+      base: el.dataset.base!,
+      navigatorLanguage: navigator.language,
+      lang: el.dataset.lang as Lang | undefined,
+    }),
+  );
+</script>

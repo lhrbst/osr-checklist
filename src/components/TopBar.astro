@@ -1,0 +1,121 @@
+---
+import { CATEGORIES, CATEGORY_LABEL, type Category, type Lang } from "../lib/categories";
+import type { Edition } from "../lib/schemas";
+import { pageUrl } from "../lib/links";
+import { t } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+  edition: Edition;
+  editions: Edition[];
+  category: Category;
+}
+const { lang, edition, editions, category } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const otherLang: Lang = lang === "en" ? "de" : "en";
+---
+
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href={pageUrl(base, lang, edition.id, category)}>{t(lang, "title")}</a>
+    <label class="edition">
+      <span>{t(lang, "edition")}</span>
+      <select data-nav>
+        {
+          editions.map((e) => (
+            <option value={pageUrl(base, lang, e.id, category)} selected={e.id === edition.id}>
+              {e.label[lang]}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+    <a class="lang" href={pageUrl(base, otherLang, edition.id, category)} hreflang={otherLang} lang={otherLang}>
+      {t(lang, "otherLanguage")}
+    </a>
+    <nav class="categories" aria-label={t(lang, "category")}>
+      {
+        CATEGORIES.map((c) => (
+          <a href={pageUrl(base, lang, edition.id, c)} aria-current={c === category ? "page" : undefined}>
+            {CATEGORY_LABEL[c][lang]}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.querySelectorAll<HTMLSelectElement>("select[data-nav]").forEach((select) =>
+    select.addEventListener("change", () => location.assign(select.value)),
+  );
+</script>
+
+<style>
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+  .brand {
+    font-weight: 700;
+    color: var(--fg);
+    text-decoration: none;
+    margin-right: auto;
+  }
+  .edition {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  select {
+    font: inherit;
+    color: var(--fg);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    padding: 0.25rem 0.4rem;
+  }
+  .lang {
+    font-size: 0.9rem;
+  }
+  .categories {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .categories a {
+    text-align: center;
+    padding: 0.45rem 0.25rem;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--fg);
+    border-left: 1px solid var(--border);
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .categories a:first-child {
+    border-left: 0;
+  }
+  .categories a[aria-current="page"] {
+    background: var(--accent);
+    color: var(--surface);
+    font-weight: 600;
+  }
+</style>
