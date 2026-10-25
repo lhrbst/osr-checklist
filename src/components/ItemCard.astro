@@ -1,0 +1,69 @@
+---
+import type { Category, Lang } from "../lib/categories";
+import type { Item } from "../lib/schemas";
+import { drawings } from "../lib/drawings";
+import { pdfLink } from "../lib/links";
+import { t } from "../i18n/ui";
+
+interface Props {
+  item: Item;
+  lang: Lang;
+  category: Category;
+  pdfUrl: string;
+}
+const { item, lang, category, pdfUrl } = Astro.props;
+const entry = item.applies[category]!;
+---
+
+<article class="card" data-item={item.id}>
+  <div class="drawing" aria-hidden="true" set:html={drawings[item.drawing]} />
+  <div class="body">
+    <h3>{item.name[lang]}</h3>
+    <p>{entry.explanation[lang]}</p>
+    <p class="source">
+      OSR {item.rules.join(", ")} ·{" "}
+      {
+        entry.pages.map((page, i) => (
+          <>
+            {i > 0 && ", "}
+            <a href={pdfLink(pdfUrl, page)} target="_blank" rel="noopener">
+              {t(lang, "page")}&nbsp;{page}
+            </a>
+          </>
+        ))
+      }
+    </p>
+  </div>
+</article>
+
+<style>
+  .card {
+    display: flex;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+  .drawing {
+    flex: 0 0 5.5rem;
+    color: var(--fg);
+  }
+  .drawing :global(svg) {
+    width: 100%;
+    height: auto;
+    max-width: 8rem;
+  }
+  h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.05rem;
+  }
+  p {
+    margin: 0 0 0.5rem;
+  }
+  .source {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+  }
+</style>

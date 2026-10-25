@@ -1,0 +1,19 @@
+---
+import type { Lang } from "../lib/categories";
+import { t } from "../i18n/ui";
+
+const { lang } = Astro.props as { lang: Lang };
+---
+
+<footer>{t(lang, "footer")}</footer>
+
+<style>
+  footer {
+    max-width: 72rem;
+    margin: 2rem auto 0;
+    padding: 1.5rem 1rem 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

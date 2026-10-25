@@ -1,0 +1,11 @@
+---
+import Redirect from "../../components/Redirect.astro";
+import { LANGS, type Lang } from "../../lib/categories";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+---
+
+<Redirect lang={lang} />

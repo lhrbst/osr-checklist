@@ -1,0 +1,68 @@
+---
+import type { Lang } from "../lib/categories";
+
+interface Props {
+  lang: Lang;
+  title: string;
+}
+const { lang, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --fg: #14213d;
+    --muted: #5b6475;
+    --accent: #0b5cad;
+    --border: #d9dee7;
+    --warn-bg: #fff6e0;
+    --warn-fg: #6b4a00;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1520;
+      --surface: #182131;
+      --fg: #e6ebf3;
+      --muted: #9aa5b8;
+      --accent: #6fb1ff;
+      --border: #2b3648;
+      --warn-bg: #2e2612;
+      --warn-fg: #f2d38a;
+      color-scheme: dark;
+    }
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  a {
+    color: var(--accent);
+  }
+  main {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+</style>
