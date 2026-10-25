@@ -1,0 +1,31 @@
+id: jackstays
+drawing: jackstays
+rules: ["4.04.2"]
+name:
+  en: Jackstays
+  de: Strecktaue (Jackstays)
+applies:
+  osr2:
+    section: rigged
+    order: 40
+    pages: [16]
+    cardHash: "sha256:fee3ee5c2e4c258dd2315d096deffa398a1eedd326521bff4a5314e805689b22"
+    explanation:
+      en: "Jackstays are lines running along each side deck that you clip your harness tether to, so you can move between the cockpit and the working areas on deck while staying attached. There must be an independent one on each side, made of uncoated, unsleeved 1×19 stainless steel wire of at least 5 mm, webbing or HMPE rope, with a breaking strength of at least 2040 kg."
+      de: "Strecktaue sind Leinen entlang jedes Seitendecks, in die du die Sorgleine deines Lifebelts einpickst. So kannst du dich zwischen Cockpit und Arbeitsplätzen an Deck bewegen, ohne dich auszupicken. Auf jeder Seite muss ein eigenes Strecktau vorhanden sein: unbeschichteter, nicht ummantelter 1×19-Edelstahldraht (mind. 5 mm), Gurtband oder HMPE-Tauwerk mit mindestens 2040 kg Bruchlast."
+  osr3:
+    section: rigged
+    order: 40
+    pages: [15]
+    cardHash: "sha256:fee3ee5c2e4c258dd2315d096deffa398a1eedd326521bff4a5314e805689b22"
+    explanation:
+      en: "Jackstays are lines running along each side deck that you clip your harness tether to, so you can move between the cockpit and the working areas on deck while staying attached. There must be an independent one on each side, made of uncoated, unsleeved 1×19 stainless steel wire of at least 5 mm, webbing or HMPE rope, with a breaking strength of at least 2040 kg."
+      de: "Strecktaue sind Leinen entlang jedes Seitendecks, in die du die Sorgleine deines Lifebelts einpickst. So kannst du dich zwischen Cockpit und Arbeitsplätzen an Deck bewegen, ohne dich auszupicken. Auf jeder Seite muss ein eigenes Strecktau vorhanden sein: unbeschichteter, nicht ummantelter 1×19-Edelstahldraht (mind. 5 mm), Gurtband oder HMPE-Tauwerk mit mindestens 2040 kg Bruchlast."
+  osr3-liferaft:
+    section: rigged
+    order: 40
+    pages: [15]
+    cardHash: "sha256:fee3ee5c2e4c258dd2315d096deffa398a1eedd326521bff4a5314e805689b22"
+    explanation:
+      en: "Jackstays are lines running along each side deck that you clip your harness tether to, so you can move between the cockpit and the working areas on deck while staying attached. There must be an independent one on each side, made of uncoated, unsleeved 1×19 stainless steel wire of at least 5 mm, webbing or HMPE rope, with a breaking strength of at least 2040 kg."
+      de: "Strecktaue sind Leinen entlang jedes Seitendecks, in die du die Sorgleine deines Lifebelts einpickst. So kannst du dich zwischen Cockpit und Arbeitsplätzen an Deck bewegen, ohne dich auszupicken. Auf jeder Seite muss ein eigenes Strecktau vorhanden sein: unbeschichteter, nicht ummantelter 1×19-Edelstahldraht (mind. 5 mm), Gurtband oder HMPE-Tauwerk mit mindestens 2040 kg Bruchlast."

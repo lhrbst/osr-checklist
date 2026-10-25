@@ -1,0 +1,16 @@
+id: 2027-v2
+label: { en: "2027 (Version 2)", de: "2027 (Version 2)" }
+effectiveFrom: 2027-01-01
+effectiveTo: 2027-12-31
+pdfs:
+  osr2: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo2_2027-2027_v2.pdf
+  osr3: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo3_2027-2027_v2.pdf
+  osr3-liferaft: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo3Life_2027-2027_v2.pdf
+  osr4: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo4_2027-2027_v2.pdf
+sections:
+  - id: bunks
+    title: { en: "Lay out on bunks", de: "Auf den Kojen auslegen" }
+    officialTitle: "Lay out on Bunk(s)"
+  - id: rigged
+    title: { en: "Rigged or fitted to demonstrate use", de: "Montiert, Funktion vorführen" }
+    officialTitle: "Rigged/Fitted to Demonstrate Use"
