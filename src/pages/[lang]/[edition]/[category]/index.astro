@@ -4,7 +4,6 @@ import Base from "../../../../layouts/Base.astro";
 import TopBar from "../../../../components/TopBar.astro";
 import ItemCard from "../../../../components/ItemCard.astro";
 import Disclaimer from "../../../../components/Disclaimer.astro";
-import Footer from "../../../../components/Footer.astro";
 import { CATEGORIES, CATEGORY_LABEL, LANGS, type Category, type Lang } from "../../../../lib/categories";
 import type { Edition, Item } from "../../../../lib/schemas";
 import { buildChecklist } from "../../../../lib/checklist";
@@ -63,7 +62,6 @@ const pdfUrl = edition.pdfs[category];
       ))
     }
   </main>
-  <Footer lang={lang} />
 </Base>
 
 <style>

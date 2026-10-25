@@ -305,8 +305,8 @@ recognisable. Fixes are made as commits on the same PR branch before merging. A
 
 ## 10. Legal and attribution
 
-- Footer: "OSR © ORC Ltd. 2002, amendments 2003-2026 © World Sailing Limited. This is
-  an unofficial guide. Always refer to the official regulations." (EN/DE).
+- No copyright footer (owner's decision, 2026-10-25): the site reproduces no OSR text, and the
+  "unofficial guide" disclaimer sits at the top of every checklist page.
 - Link to the official PDFs on World Sailing's servers; never rehost them.
 - No verbatim regulation text rendered. Asking World Sailing/ORC for reprint
   permission is a possible later step.
