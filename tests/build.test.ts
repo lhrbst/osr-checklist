@@ -41,8 +41,11 @@ describe("built site", () => {
     expect(page("de", "osr3")).toContain('data-item="jackstays"');
   });
 
-  it("shows the footer in the page language", () => {
-    for (const lang of LANGS) expect(page(lang, "osr3")).toContain(FOOTER[lang]);
+  it("has no copyright footer", () => {
+    for (const lang of LANGS) {
+      expect(page(lang, "osr3")).not.toContain(FOOTER[lang]);
+      expect(page(lang, "osr3")).not.toContain("<footer");
+    }
   });
 
   it("redirects from the root with a no-script fallback to every checklist", () => {

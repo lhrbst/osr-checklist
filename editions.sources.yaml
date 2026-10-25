@@ -1,0 +1,15 @@
+# Source PDFs per OSR edition, used by the "Extract OSR edition" workflow and `npm run extract -- --edition <id>`.
+# Find the four "Extract for Monohull Category …" PDFs on https://www.sailing.org/offshore-special-regulations/.
+# When adding an edition, also add its id to the `edition` options in .github/workflows/extract-edition.yml.
+#
+# 2026-v1 is not listed yet: the Mo3 extract's PDF link could not be found on sailing.org.
+
+- id: 2027-v2
+  label: { en: "2027 (Version 2)", de: "2027 (Version 2)" }
+  effectiveFrom: 2027-01-01
+  effectiveTo: 2027-12-31
+  pdfs:
+    osr2: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo2_2027-2027_v2.pdf
+    osr3: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo3_2027-2027_v2.pdf
+    osr3-liferaft: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo3Life_2027-2027_v2.pdf
+    osr4: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo4_2027-2027_v2.pdf

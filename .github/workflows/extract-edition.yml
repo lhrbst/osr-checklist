@@ -4,32 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       edition:
-        description: "Edition id, e.g. 2027-v2"
+        description: "Edition to extract (details in editions.sources.yaml)"
+        type: choice
         required: true
-      label_en:
-        description: 'English label, e.g. "2027 (Version 2)"'
-        required: true
-      label_de:
-        description: 'German label, e.g. "2027 (Version 2)"'
-        required: true
-      from:
-        description: "In force from (YYYY-MM-DD)"
-        required: true
-      to:
-        description: "In force until (YYYY-MM-DD)"
-        required: true
-      osr2_url:
-        description: "PDF URL: Monohull Category 2 extract"
-        required: true
-      osr3_url:
-        description: "PDF URL: Monohull Category 3 extract"
-        required: true
-      osr3_liferaft_url:
-        description: "PDF URL: Monohull Category 3 with liferaft extract"
-        required: true
-      osr4_url:
-        description: "PDF URL: Monohull Category 4 extract"
-        required: true
+        options:
+          - 2027-v2
 
 permissions:
   contents: write
@@ -51,20 +30,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EDITION: ${{ inputs.edition }}
-          LABEL_EN: ${{ inputs.label_en }}
-          LABEL_DE: ${{ inputs.label_de }}
-          FROM: ${{ inputs.from }}
-          TO: ${{ inputs.to }}
-          OSR2: ${{ inputs.osr2_url }}
-          OSR3: ${{ inputs.osr3_url }}
-          OSR3L: ${{ inputs.osr3_liferaft_url }}
-          OSR4: ${{ inputs.osr4_url }}
-        run: >-
-          npm run extract --
-          --edition "$EDITION" --label-en "$LABEL_EN" --label-de "$LABEL_DE"
-          --from "$FROM" --to "$TO"
-          --osr2 "$OSR2" --osr3 "$OSR3" --osr3-liferaft "$OSR3L" --osr4 "$OSR4"
-          --summary-out "$RUNNER_TEMP/pr-body.md"
+        run: npm run extract -- --edition "$EDITION" --summary-out "$RUNNER_TEMP/pr-body.md"
       - name: Test and build
         id: build
         continue-on-error: true
