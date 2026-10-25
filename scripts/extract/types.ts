@@ -9,7 +9,7 @@ const cardPlacement = z.object({
   cardLine: z.string(),
 });
 
-/** What Claude returns for one edition: the merged Appendix F card structure. */
+/** What the LLM returns for one edition: the merged Appendix F card structure. */
 export const ExtractionSchema = z.object({
   sections: z.array(z.object({ id: z.string(), officialTitle: z.string(), title: localized })),
   items: z.array(

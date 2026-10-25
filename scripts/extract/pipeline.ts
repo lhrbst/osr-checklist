@@ -9,7 +9,7 @@ import type { Attention, ExtractedItem, Extraction } from "./types";
 export const PLACEHOLDER_DRAWING = "placeholder";
 const CONCURRENCY = 4;
 
-/** The claude.ts calls with the client already bound, plus what is already on disk. */
+/** The llm.ts calls with the client already bound, plus what is already on disk. */
 export interface Deps {
   extractStructure: (pdfs: Record<Category, Buffer>, previous: { id: string; rules: string[]; name: Localized }[]) => Promise<Extraction>;
   generateExplanations: (item: ExtractedItem, ruleTextByCat: Partial<Record<Category, string>>) => Promise<Partial<Record<Category, Localized>>>;

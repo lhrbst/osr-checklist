@@ -1,13 +1,13 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
+import OpenAI from "openai";
 import { parse } from "yaml";
 import { CATEGORIES, type Category } from "../../src/lib/categories";
 import { previousEdition } from "../../src/lib/editions";
 import { editionSchema, itemSchema, type Item } from "../../src/lib/schemas";
-import { extractStructure, generateDrawing, generateExplanations } from "./claude";
+import { extractStructure, generateDrawing, generateExplanations } from "./llm";
 import { pdfPages } from "./pdftext";
 import { runPipeline } from "./pipeline";
 import { prSummary, writeEdition } from "./write";
@@ -74,7 +74,7 @@ async function main() {
     console.log(`${category}: ${pagesByCat[category].length} pages`);
   }
 
-  const client = new Anthropic();
+  const client = new OpenAI();
   const existingDrawings = new Set(
     (await readdir(join(CONTENT, "drawings"))).filter((f) => f.endsWith(".svg")).map((f) => f.slice(0, -".svg".length)),
   );
