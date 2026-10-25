@@ -1,0 +1,83 @@
+name: Extract OSR edition
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "Edition id, e.g. 2027-v2"
+        required: true
+      label_en:
+        description: 'English label, e.g. "2027 (Version 2)"'
+        required: true
+      label_de:
+        description: 'German label, e.g. "2027 (Version 2)"'
+        required: true
+      from:
+        description: "In force from (YYYY-MM-DD)"
+        required: true
+      to:
+        description: "In force until (YYYY-MM-DD)"
+        required: true
+      osr2_url:
+        description: "PDF URL: Monohull Category 2 extract"
+        required: true
+      osr3_url:
+        description: "PDF URL: Monohull Category 3 extract"
+        required: true
+      osr3_liferaft_url:
+        description: "PDF URL: Monohull Category 3 with liferaft extract"
+        required: true
+      osr4_url:
+        description: "PDF URL: Monohull Category 4 extract"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Extract and generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EDITION: ${{ inputs.edition }}
+          LABEL_EN: ${{ inputs.label_en }}
+          LABEL_DE: ${{ inputs.label_de }}
+          FROM: ${{ inputs.from }}
+          TO: ${{ inputs.to }}
+          OSR2: ${{ inputs.osr2_url }}
+          OSR3: ${{ inputs.osr3_url }}
+          OSR3L: ${{ inputs.osr3_liferaft_url }}
+          OSR4: ${{ inputs.osr4_url }}
+        run: >-
+          npm run extract --
+          --edition "$EDITION" --label-en "$LABEL_EN" --label-de "$LABEL_DE"
+          --from "$FROM" --to "$TO"
+          --osr2 "$OSR2" --osr3 "$OSR3" --osr3-liferaft "$OSR3L" --osr4 "$OSR4"
+          --summary-out "$RUNNER_TEMP/pr-body.md"
+      - name: Test and build
+        id: build
+        continue-on-error: true
+        run: npm test && npm run build
+      - name: Note build failure in PR body
+        if: steps.build.outcome == 'failure'
+        run: |
+          printf '\n## ⚠️ Build failed\n\nTests or the site build failed on this branch. See the workflow run: %s\n' \
+            "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> "$RUNNER_TEMP/pr-body.md"
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: extract/${{ inputs.edition }}
+          title: "OSR edition ${{ inputs.edition }}"
+          commit-message: "content: extract OSR edition ${{ inputs.edition }}"
+          body-path: ${{ runner.temp }}/pr-body.md
+          add-paths: src/content/**
