@@ -9,6 +9,7 @@ import { previousEdition } from "../../src/lib/editions";
 import { editionSchema, itemSchema, type Item } from "../../src/lib/schemas";
 import { extractStructure, generateDrawing, generateExplanations } from "./llm";
 import { pdfPages } from "./pdftext";
+import { loadEditionSource } from "./sources";
 import { runPipeline } from "./pipeline";
 import { prSummary, writeEdition } from "./write";
 
@@ -18,14 +19,7 @@ const CONTENT = join(ROOT, "src/content");
 const { values: args } = parseArgs({
   options: {
     edition: { type: "string" },
-    "label-en": { type: "string" },
-    "label-de": { type: "string" },
-    from: { type: "string" },
-    to: { type: "string" },
-    osr2: { type: "string" },
-    osr3: { type: "string" },
-    "osr3-liferaft": { type: "string" },
-    osr4: { type: "string" },
+    sources: { type: "string", default: "editions.sources.yaml" },
     "summary-out": { type: "string" },
   },
 });
@@ -40,13 +34,7 @@ const yamlFiles = async (dir: string) =>
   (await readdir(dir).catch(() => [] as string[])).filter((f) => f.endsWith(".yaml")).map((f) => join(dir, f));
 
 async function main() {
-  const edition = editionSchema.omit({ sections: true }).parse({
-    id: required("edition"),
-    label: { en: required("label-en"), de: required("label-de") },
-    effectiveFrom: required("from"),
-    effectiveTo: required("to"),
-    pdfs: Object.fromEntries(CATEGORIES.map((c) => [c, required(c)])),
-  });
+  const edition = loadEditionSource(join(ROOT, args.sources!), required("edition"));
 
   const known = await Promise.all(
     (await yamlFiles(join(CONTENT, "editions"))).map(async (f) => editionSchema.parse(parse(await readFile(f, "utf8")))),
