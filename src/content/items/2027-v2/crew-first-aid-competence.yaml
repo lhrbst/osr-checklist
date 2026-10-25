@@ -1,0 +1,49 @@
+id: crew-first-aid-competence
+drawing: crew-first-aid-competence
+rules:
+  - 6.05.2
+  - 6.05.3
+name:
+  en: Crew first-aid competence
+  de: Erste-Hilfe-Kenntnisse der Crew (Crew First-aid Competence)
+applies:
+  osr2:
+    section: chart-table
+    order: 100
+    pages:
+      - 24
+    cardHash: sha256:b2957ce7eb057c4fbe0fcc9cb79a318f16b9c7d1d1926a2159ab8702f8eac013
+    sourceHash: sha256:dc59275e185c763898712ad6c67a0059cbf4a868acc9355e295e6508f224a5e8
+    explanation:
+      en: "For MoMu 2, at least one crew member must be familiar with first-aid procedures, hypothermia, drowning, CPR and relevant communications systems. In addition, another crew member must hold a first-aid certificate completed within the past five years: either a course recognised by an MNA and listed on the World Sailing website, or STCW Elementary First Aid (A-VI/1-3) or a higher STCW level."
+      de: "Für MoMu 2 muss mindestens ein Crewmitglied mit Erste-Hilfe-Maßnahmen, Unterkühlung, Ertrinken, Herz-Lungen-Wiederbelebung und den einschlägigen Kommunikationssystemen vertraut sein. Zusätzlich muss ein anderes Crewmitglied ein Erste-Hilfe-Zertifikat besitzen, dessen Kurs innerhalb der letzten fünf Jahre absolviert wurde: entweder einen von einer MNA anerkannten und auf der World-Sailing-Website aufgeführten Kurs oder STCW Elementary First Aid (A-VI/1-3) beziehungsweise eine höhere STCW-Stufe."
+  osr3:
+    section: chart-table
+    order: 60
+    pages:
+      - 21
+    cardHash: sha256:2f934ca1a16116fd8f52f5adcb1bff949cd520c68aec62d51366dc6813857d5f
+    sourceHash: sha256:3a0557e6b7e4db113c6881aca85fbc3755c0b5c21131d6a4b626e63837e1058f
+    explanation:
+      en: For MoMu 3 and 4, at least two crew members must be familiar with first-aid procedures, hypothermia, drowning, CPR and relevant communications systems. No certificate or recency period is specified here.
+      de: Für MoMu 3 und 4 müssen mindestens zwei Crewmitglieder mit Erste-Hilfe-Maßnahmen, Unterkühlung, Ertrinken, Herz-Lungen-Wiederbelebung und den einschlägigen Kommunikationssystemen vertraut sein. Hier sind weder ein Zertifikat noch eine Frist für eine Schulung festgelegt.
+  osr3-liferaft:
+    section: chart-table
+    order: 70
+    pages:
+      - 23
+    cardHash: sha256:2f934ca1a16116fd8f52f5adcb1bff949cd520c68aec62d51366dc6813857d5f
+    sourceHash: sha256:8ae6c6e72d668b1913a667ef6041264a70d33b13b61855427d9358daec36100b
+    explanation:
+      en: For MoMu 3 and 4, at least two crew members must be familiar with first-aid procedures, hypothermia, drowning, CPR and relevant communications systems. No certificate or recency period is specified here.
+      de: Für MoMu 3 und 4 müssen mindestens zwei Crewmitglieder mit Erste-Hilfe-Maßnahmen, Unterkühlung, Ertrinken, Herz-Lungen-Wiederbelebung und den einschlägigen Kommunikationssystemen vertraut sein. Hier sind weder ein Zertifikat noch eine Frist für eine Schulung festgelegt.
+  osr4:
+    section: chart-table
+    order: 40
+    pages:
+      - 15
+    cardHash: sha256:2f934ca1a16116fd8f52f5adcb1bff949cd520c68aec62d51366dc6813857d5f
+    sourceHash: sha256:d844addeb61da57199343b0abb8c879fa9bfeac5205da3605246548bd8b407b3
+    explanation:
+      en: For MoMu 3 and 4, at least two crew members must be familiar with first-aid procedures, hypothermia, drowning, CPR and relevant communications systems. No certificate or recency period is specified here.
+      de: Für MoMu 3 und 4 müssen mindestens zwei Crewmitglieder mit Erste-Hilfe-Maßnahmen, Unterkühlung, Ertrinken, Herz-Lungen-Wiederbelebung und den einschlägigen Kommunikationssystemen vertraut sein. Hier sind weder ein Zertifikat noch eine Frist für eine Schulung festgelegt.

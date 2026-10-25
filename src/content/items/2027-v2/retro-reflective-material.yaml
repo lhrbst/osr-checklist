@@ -1,0 +1,48 @@
+id: retro-reflective-material
+drawing: retro-reflective-material
+rules:
+  - "4.18"
+name:
+  en: Marine retro-reflective material
+  de: Seewasserfestes Reflexmaterial (Retro-Reflective Material)
+applies:
+  osr2:
+    section: general
+    order: 250
+    pages:
+      - 17
+    cardHash: sha256:96eafeea6d00563dcafb4bdbdfa5e721cddcb438d16006f3190c6b3e21006695
+    sourceHash: sha256:2944ac73b833a8482dad24a4619e48db0d67abc52c4e6a5fd3ef8f91e4afc411
+    explanation:
+      en: Marine-grade retro-reflective material is material that reflects light back toward its source. The boat must have it on lifebuoys, recovery slings, liferafts and lifejackets; the rule specifies no quantity or dimensions.
+      de: Hochseetaugliches retroreflektierendes Material wirft Licht zur Lichtquelle zurück. Es muss an Rettungsringen, Bergeschlaufen, Rettungsinseln und Rettungswesten angebracht sein; Menge und Abmessungen sind nicht festgelegt.
+  osr3:
+    section: general
+    order: 270
+    pages:
+      - 16
+    cardHash: sha256:96eafeea6d00563dcafb4bdbdfa5e721cddcb438d16006f3190c6b3e21006695
+    sourceHash: sha256:a3f01b0e4a5ced00bcac81b885ce22061d4d154145e3e4e31bb161998bb57fee
+    explanation:
+      en: Marine-grade retro-reflective material is material that reflects light back toward its source. The boat must have it on lifebuoys, recovery slings, liferafts and lifejackets; the rule specifies no quantity or dimensions.
+      de: Hochseetaugliches retroreflektierendes Material wirft Licht zur Lichtquelle zurück. Es muss an Rettungsringen, Bergeschlaufen, Rettungsinseln und Rettungswesten angebracht sein; Menge und Abmessungen sind nicht festgelegt.
+  osr3-liferaft:
+    section: general
+    order: 270
+    pages:
+      - 16
+    cardHash: sha256:96eafeea6d00563dcafb4bdbdfa5e721cddcb438d16006f3190c6b3e21006695
+    sourceHash: sha256:35a1fa40999bd9cb9f6f6c497e5d81ffa5c1cbc6dcaba6296f91b702074922eb
+    explanation:
+      en: Marine-grade retro-reflective material is material that reflects light back toward its source. The boat must have it on lifebuoys, recovery slings, liferafts and lifejackets; the rule specifies no quantity or dimensions.
+      de: Hochseetaugliches retroreflektierendes Material wirft Licht zur Lichtquelle zurück. Es muss an Rettungsringen, Bergeschlaufen, Rettungsinseln und Rettungswesten angebracht sein; Menge und Abmessungen sind nicht festgelegt.
+  osr4:
+    section: general
+    order: 180
+    pages:
+      - 13
+    cardHash: sha256:96eafeea6d00563dcafb4bdbdfa5e721cddcb438d16006f3190c6b3e21006695
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
+    explanation:
+      en: Marine-grade retro-reflective material is material that reflects light back toward its source. The boat must have it on lifebuoys, recovery slings, liferafts and lifejackets; the rule specifies no quantity or dimensions.
+      de: Hochseetaugliches retroreflektierendes Material wirft Licht zur Lichtquelle zurück. Es muss an Rettungsringen, Bergeschlaufen, Rettungsinseln und Rettungswesten angebracht sein; Menge und Abmessungen sind nicht festgelegt.

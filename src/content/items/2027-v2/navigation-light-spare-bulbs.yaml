@@ -1,0 +1,48 @@
+id: navigation-light-spare-bulbs
+drawing: navigation-light-spare-bulbs
+rules:
+  - 3.27.4
+name:
+  en: Navigation-light spare bulbs
+  de: Ersatzlampen für Positionslichter (Spare Bulbs)
+applies:
+  osr2:
+    section: below-deck
+    order: 110
+    pages:
+      - 14
+    cardHash: sha256:b857d3bec00fdfa75a8076dcc8c17c4513f4388ec9ea2b035972831ab49ad279
+    sourceHash: sha256:16cb8a9ea3b4fd5c29578265a8522bcba17c08263e6b382e472298939e57de31
+    explanation:
+      en: Carry spare bulbs for the navigation lights. No number or rating is specified; spare bulbs are not required for LED lights.
+      de: Führen Sie Ersatzlampen für die Navigationslichter mit. Anzahl und Leistungsdaten sind nicht festgelegt; bei LED-Leuchten sind keine Ersatzlampen erforderlich.
+  osr3:
+    section: below-deck
+    order: 110
+    pages:
+      - 13
+    cardHash: sha256:b857d3bec00fdfa75a8076dcc8c17c4513f4388ec9ea2b035972831ab49ad279
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: Carry spare bulbs for the navigation lights. No number or rating is specified; spare bulbs are not required for LED lights.
+      de: Führen Sie Ersatzlampen für die Navigationslichter mit. Anzahl und Leistungsdaten sind nicht festgelegt; bei LED-Leuchten sind keine Ersatzlampen erforderlich.
+  osr3-liferaft:
+    section: below-deck
+    order: 110
+    pages:
+      - 13
+    cardHash: sha256:b857d3bec00fdfa75a8076dcc8c17c4513f4388ec9ea2b035972831ab49ad279
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: Carry spare bulbs for the navigation lights. No number or rating is specified; spare bulbs are not required for LED lights.
+      de: Führen Sie Ersatzlampen für die Navigationslichter mit. Anzahl und Leistungsdaten sind nicht festgelegt; bei LED-Leuchten sind keine Ersatzlampen erforderlich.
+  osr4:
+    section: below-deck
+    order: 80
+    pages:
+      - 11
+    cardHash: sha256:b857d3bec00fdfa75a8076dcc8c17c4513f4388ec9ea2b035972831ab49ad279
+    sourceHash: sha256:3e805f4d3506548a3f18ba87c516b788b7725c3057faa7b9b0e8da9b92f83fe8
+    explanation:
+      en: Carry spare bulbs for the navigation lights. No number or rating is specified; spare bulbs are not required for LED lights.
+      de: Führen Sie Ersatzlampen für die Navigationslichter mit. Anzahl und Leistungsdaten sind nicht festgelegt; bei LED-Leuchten sind keine Ersatzlampen erforderlich.

@@ -1,0 +1,48 @@
+id: crew-overboard-drill
+drawing: crew-overboard-drill
+rules:
+  - "6.04"
+name:
+  en: Crew-overboard recovery drill
+  de: Mensch-über-Bord-Übung (Crew-overboard Recovery Drill)
+applies:
+  osr2:
+    section: chart-table
+    order: 80
+    pages:
+      - 24
+    cardHash: sha256:2b016fa7d07eb4f67854baafc0c741958e9bd5709c69b40ecd9b65f11d7e70e5
+    sourceHash: sha256:dc59275e185c763898712ad6c67a0059cbf4a868acc9355e295e6508f224a5e8
+    explanation:
+      en: This is a practice drill for recovering a crew member who has fallen overboard. The crew must practise it at least once a year; no particular method or equipment is specified here.
+      de: Bei dieser Übung wird trainiert, wie ein über Bord gegangener Crewmitglied geborgen wird. Die Crew muss sie mindestens einmal jährlich üben; eine bestimmte Methode oder Ausrüstung ist hier nicht vorgeschrieben.
+  osr3:
+    section: chart-table
+    order: 40
+    pages:
+      - 21
+    cardHash: sha256:2b016fa7d07eb4f67854baafc0c741958e9bd5709c69b40ecd9b65f11d7e70e5
+    sourceHash: sha256:3a0557e6b7e4db113c6881aca85fbc3755c0b5c21131d6a4b626e63837e1058f
+    explanation:
+      en: This is a practice drill for recovering a crew member who has fallen overboard. The crew must practise it at least once a year; no particular method or equipment is specified here.
+      de: Bei dieser Übung wird trainiert, wie ein über Bord gegangener Crewmitglied geborgen wird. Die Crew muss sie mindestens einmal jährlich üben; eine bestimmte Methode oder Ausrüstung ist hier nicht vorgeschrieben.
+  osr3-liferaft:
+    section: chart-table
+    order: 50
+    pages:
+      - 23
+    cardHash: sha256:2b016fa7d07eb4f67854baafc0c741958e9bd5709c69b40ecd9b65f11d7e70e5
+    sourceHash: sha256:8ae6c6e72d668b1913a667ef6041264a70d33b13b61855427d9358daec36100b
+    explanation:
+      en: This is a practice drill for recovering a crew member who has fallen overboard. The crew must practise it at least once a year; no particular method or equipment is specified here.
+      de: Bei dieser Übung wird trainiert, wie ein über Bord gegangener Crewmitglied geborgen wird. Die Crew muss sie mindestens einmal jährlich üben; eine bestimmte Methode oder Ausrüstung ist hier nicht vorgeschrieben.
+  osr4:
+    section: chart-table
+    order: 20
+    pages:
+      - 15
+    cardHash: sha256:2b016fa7d07eb4f67854baafc0c741958e9bd5709c69b40ecd9b65f11d7e70e5
+    sourceHash: sha256:d844addeb61da57199343b0abb8c879fa9bfeac5205da3605246548bd8b407b3
+    explanation:
+      en: This is a practice drill for recovering a crew member who has fallen overboard. The crew must practise it at least once a year; no particular method or equipment is specified here.
+      de: Bei dieser Übung wird trainiert, wie ein über Bord gegangener Crewmitglied geborgen wird. Die Crew muss sie mindestens einmal jährlich üben; eine bestimmte Methode oder Ausrüstung ist hier nicht vorgeschrieben.

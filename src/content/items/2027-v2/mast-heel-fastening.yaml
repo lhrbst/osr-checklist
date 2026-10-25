@@ -1,0 +1,48 @@
+id: mast-heel-fastening
+drawing: mast-heel-fastening
+rules:
+  - "3.12"
+name:
+  en: Keel-stepped mast heel fastening
+  de: Sicherung des durchgesteckten Mastfußes (Mast Heel Fastening)
+applies:
+  osr2:
+    section: below-deck
+    order: 40
+    pages:
+      - 11
+    cardHash: sha256:c8dfd076371d3f0531774c499654e8c0965479cab51a7c2c7ebd81029c156255
+    sourceHash: sha256:aa2fe2b1ae0027daa31d1364bafa3337dd75d3c4bd54d622098aa05bcd1fef2f
+    explanation:
+      en: This concerns the foot of a mast that passes through the deck and is supported by the keel structure. Its heel must be securely fastened to the mast step or to adjoining structure.
+      de: Es geht um den Mastfuß eines durch Deck und Rumpf bis zum Kiel geführten Masts. Der Mastfuß muss fest mit dem Mastfußlager oder einer angrenzenden Struktur verbunden sein.
+  osr3:
+    section: below-deck
+    order: 40
+    pages:
+      - 9
+    cardHash: sha256:c8dfd076371d3f0531774c499654e8c0965479cab51a7c2c7ebd81029c156255
+    sourceHash: sha256:ca93f1b2a1dc2c12a803bd0d48fe91f16539f58c255b196dce82bb623a198311
+    explanation:
+      en: This concerns the foot of a mast that passes through the deck and is supported by the keel structure. Its heel must be securely fastened to the mast step or to adjoining structure.
+      de: Es geht um den Mastfuß eines durch Deck und Rumpf bis zum Kiel geführten Masts. Der Mastfuß muss fest mit dem Mastfußlager oder einer angrenzenden Struktur verbunden sein.
+  osr3-liferaft:
+    section: below-deck
+    order: 40
+    pages:
+      - 9
+    cardHash: sha256:c8dfd076371d3f0531774c499654e8c0965479cab51a7c2c7ebd81029c156255
+    sourceHash: sha256:ca93f1b2a1dc2c12a803bd0d48fe91f16539f58c255b196dce82bb623a198311
+    explanation:
+      en: This concerns the foot of a mast that passes through the deck and is supported by the keel structure. Its heel must be securely fastened to the mast step or to adjoining structure.
+      de: Es geht um den Mastfuß eines durch Deck und Rumpf bis zum Kiel geführten Masts. Der Mastfuß muss fest mit dem Mastfußlager oder einer angrenzenden Struktur verbunden sein.
+  osr4:
+    section: below-deck
+    order: 40
+    pages:
+      - 9
+    cardHash: sha256:c8dfd076371d3f0531774c499654e8c0965479cab51a7c2c7ebd81029c156255
+    sourceHash: sha256:acbfcffda7b8b1c646927f9046dacbfd14b61614ba33475e718bd438640857c0
+    explanation:
+      en: This concerns the foot of a mast that passes through the deck and is supported by the keel structure. Its heel must be securely fastened to the mast step or to adjoining structure.
+      de: Es geht um den Mastfuß eines durch Deck und Rumpf bis zum Kiel geführten Masts. Der Mastfuß muss fest mit dem Mastfußlager oder einer angrenzenden Struktur verbunden sein.

@@ -1,39 +1,48 @@
 id: foghorn
 drawing: foghorn
-rules: ["4.09"]
+rules:
+  - "4.09"
 name:
   en: Foghorn
   de: Nebelhorn (Foghorn)
 applies:
   osr2:
     section: bunks
-    order: 20
-    pages: [17]
-    cardHash: "sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32"
+    order: 40
+    pages:
+      - 17
+    cardHash: sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32
+    sourceHash: sha256:2944ac73b833a8482dad24a4619e48db0d67abc52c4e6a5fd3ef8f91e4afc411
     explanation:
-      en: "A foghorn for making sound signals, for example in fog or poor visibility. One must be on board."
-      de: "Ein Nebelhorn, um Schallsignale zu geben, zum Beispiel bei Nebel oder schlechter Sicht. Eines muss an Bord sein."
+      en: Carry a foghorn for making a loud sound signal in fog. This category requires one; no size or rating is specified.
+      de: Führen Sie ein Nebelhorn mit, um bei Nebel ein lautes Schallsignal geben zu können. In dieser Kategorie ist eines vorgeschrieben; Größe oder Leistungsdaten sind nicht festgelegt.
   osr3:
     section: bunks
-    order: 20
-    pages: [16]
-    cardHash: "sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32"
+    order: 40
+    pages:
+      - 16
+    cardHash: sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32
+    sourceHash: sha256:a3f01b0e4a5ced00bcac81b885ce22061d4d154145e3e4e31bb161998bb57fee
     explanation:
-      en: "A foghorn for making sound signals, for example in fog or poor visibility. One must be on board."
-      de: "Ein Nebelhorn, um Schallsignale zu geben, zum Beispiel bei Nebel oder schlechter Sicht. Eines muss an Bord sein."
+      en: Carry a foghorn for making a loud sound signal in fog. This category requires one; no size or rating is specified.
+      de: Führen Sie ein Nebelhorn mit, um bei Nebel ein lautes Schallsignal geben zu können. In dieser Kategorie ist eines vorgeschrieben; Größe oder Leistungsdaten sind nicht festgelegt.
   osr3-liferaft:
     section: bunks
-    order: 20
-    pages: [16]
-    cardHash: "sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32"
+    order: 40
+    pages:
+      - 16
+    cardHash: sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32
+    sourceHash: sha256:35a1fa40999bd9cb9f6f6c497e5d81ffa5c1cbc6dcaba6296f91b702074922eb
     explanation:
-      en: "A foghorn for making sound signals, for example in fog or poor visibility. One must be on board."
-      de: "Ein Nebelhorn, um Schallsignale zu geben, zum Beispiel bei Nebel oder schlechter Sicht. Eines muss an Bord sein."
+      en: Carry a foghorn for making a loud sound signal in fog. This category requires one; no size or rating is specified.
+      de: Führen Sie ein Nebelhorn mit, um bei Nebel ein lautes Schallsignal geben zu können. In dieser Kategorie ist eines vorgeschrieben; Größe oder Leistungsdaten sind nicht festgelegt.
   osr4:
     section: bunks
-    order: 20
-    pages: [13]
-    cardHash: "sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32"
+    order: 40
+    pages:
+      - 13
+    cardHash: sha256:b4b4d36b3365a52267e93ca7af90c8cfeed48df8a289d5c626f5d81356daad32
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
     explanation:
-      en: "A foghorn for making sound signals, for example in fog or poor visibility. One must be on board."
-      de: "Ein Nebelhorn, um Schallsignale zu geben, zum Beispiel bei Nebel oder schlechter Sicht. Eines muss an Bord sein."
+      en: Carry a foghorn for making a loud sound signal in fog. This category requires one; no size or rating is specified.
+      de: Führen Sie ein Nebelhorn mit, um bei Nebel ein lautes Schallsignal geben zu können. In dieser Kategorie ist eines vorgeschrieben; Größe oder Leistungsdaten sind nicht festgelegt.

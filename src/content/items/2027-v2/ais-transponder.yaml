@@ -1,0 +1,38 @@
+id: ais-transponder
+drawing: ais-transponder
+rules:
+  - 3.29.7
+name:
+  en: AIS transponder and antenna
+  de: AIS-Transponder mit Antenne (AIS Transponder)
+applies:
+  osr2:
+    section: below-deck
+    order: 150
+    pages:
+      - 15
+    cardHash: sha256:00f528d28d0894bc04d1c8c890899398a4d01ddf19875ff7b7389ed5268f9a7a
+    sourceHash: sha256:75fc5e83b4abce3cee2a14583b094a9c3b3982645c5bb9b10f6bca226bc5423d
+    explanation:
+      en: The boat must carry an AIS transponder. It must either share the masthead VHF antenna through a low-loss AIS splitter, or use a dedicated AIS antenna at least 38 cm long, mounted with its base at least 3 m above the waterline and fed by coaxial cable with no more than 40% power loss.
+      de: Das Boot muss einen AIS-Transponder mitführen. Er muss entweder über einen verlustarmen AIS-Antennensplitter an der VHF-Mastantenne angeschlossen sein oder eine eigene AIS-Antenne von mindestens 38 cm Länge haben; deren Fuß muss mindestens 3 m über der Wasserlinie liegen und das Koaxialkabel darf höchstens 40 % Leistungsverlust verursachen.
+  osr3:
+    section: below-deck
+    order: 150
+    pages:
+      - 14
+    cardHash: sha256:00f528d28d0894bc04d1c8c890899398a4d01ddf19875ff7b7389ed5268f9a7a
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: The boat must carry an AIS transponder. It must either share the masthead VHF antenna through a low-loss AIS splitter, or use a dedicated AIS antenna at least 38 cm long, mounted with its base at least 3 m above the waterline and fed by coaxial cable with no more than 40% power loss.
+      de: Das Boot muss einen AIS-Transponder mitführen. Er muss entweder über einen verlustarmen AIS-Antennensplitter an der VHF-Mastantenne angeschlossen sein oder eine eigene AIS-Antenne von mindestens 38 cm Länge haben; deren Fuß muss mindestens 3 m über der Wasserlinie liegen und das Koaxialkabel darf höchstens 40 % Leistungsverlust verursachen.
+  osr3-liferaft:
+    section: below-deck
+    order: 150
+    pages:
+      - 14
+    cardHash: sha256:00f528d28d0894bc04d1c8c890899398a4d01ddf19875ff7b7389ed5268f9a7a
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: The boat must carry an AIS transponder. It must either share the masthead VHF antenna through a low-loss AIS splitter, or use a dedicated AIS antenna at least 38 cm long, mounted with its base at least 3 m above the waterline and fed by coaxial cable with no more than 40% power loss.
+      de: Das Boot muss einen AIS-Transponder mitführen. Er muss entweder über einen verlustarmen AIS-Antennensplitter an der VHF-Mastantenne angeschlossen sein oder eine eigene AIS-Antenne von mindestens 38 cm Länge haben; deren Fuß muss mindestens 3 m über der Wasserlinie liegen und das Koaxialkabel darf höchstens 40 % Leistungsverlust verursachen.

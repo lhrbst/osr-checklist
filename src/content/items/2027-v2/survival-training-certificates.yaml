@@ -1,0 +1,39 @@
+id: survival-training-certificates
+drawing: survival-training-certificates
+rules:
+  - 6.01.2
+  - 6.01.3
+name:
+  en: Survival training certificates
+  de: Nachweise des Sicherheitstrainings (Survival Training Certificates)
+applies:
+  osr2:
+    section: chart-table
+    order: 70
+    pages:
+      - 24
+    cardHash: sha256:bda095ee058e75b9b48abf4e612800e8e3d6cf3e206b16388a3e78c22fe8a4fb
+    sourceHash: sha256:dc59275e185c763898712ad6c67a0059cbf4a868acc9355e295e6508f224a5e8
+    explanation:
+      en: For MoMu1 and MoMu2, at least 30% of the crew—and never fewer than two people, including the person in charge—must have completed training in the OSR 6.02 topics within the five years before the race starts. An in-date certificate from a World Sailing-approved Offshore Personal Survival Training course is accepted as evidence, unless the Notice of Race says otherwise; a refresher can renew a certificate if completed within two years after it expires.
+      de: Bei MoMu1 und MoMu2 müssen mindestens 30 % der Crew, jedoch mindestens zwei Personen einschließlich der verantwortlichen Person, innerhalb der fünf Jahre vor dem Start eine Schulung zu den Themen aus OSR 6.02 absolviert haben. Als Nachweis gilt ein gültiges Zertifikat eines von World Sailing anerkannten Offshore-Personal-Survival-Trainingskurses, sofern die Ausschreibung nichts anderes festlegt; ein Auffrischungskurs kann das Zertifikat erneuern, wenn er innerhalb von zwei Jahren nach dessen Ablauf absolviert wird.
+  osr3:
+    section: chart-table
+    order: 30
+    pages:
+      - 21
+    cardHash: sha256:06ca3605f48c799c98118f09bc77cd7607a956f9b6100c93a4df4845da61b0ab
+    sourceHash: sha256:3a0557e6b7e4db113c6881aca85fbc3755c0b5c21131d6a4b626e63837e1058f
+    explanation:
+      en: For MoMu3, when the crew consists of only two people, at least one must have completed training in the OSR 6.02 topics within the five years before the race starts. A refresher course can renew a certificate if completed within two years after the most recent certificate expires.
+      de: Bei MoMu3 muss bei einer Crew aus nur zwei Personen mindestens eine Person innerhalb der fünf Jahre vor dem Start eine Schulung zu den Themen aus OSR 6.02 absolviert haben. Ein Auffrischungskurs kann ein Zertifikat erneuern, wenn er innerhalb von zwei Jahren nach dessen Ablauf absolviert wird.
+  osr3-liferaft:
+    section: chart-table
+    order: 40
+    pages:
+      - 23
+    cardHash: sha256:06ca3605f48c799c98118f09bc77cd7607a956f9b6100c93a4df4845da61b0ab
+    sourceHash: sha256:8ae6c6e72d668b1913a667ef6041264a70d33b13b61855427d9358daec36100b
+    explanation:
+      en: For MoMu3, when the crew consists of only two people, at least one must have completed training in the OSR 6.02 topics within the five years before the race starts. A refresher course can renew a certificate if completed within two years after the most recent certificate expires.
+      de: Bei MoMu3 muss bei einer Crew aus nur zwei Personen mindestens eine Person innerhalb der fünf Jahre vor dem Start eine Schulung zu den Themen aus OSR 6.02 absolviert haben. Ein Auffrischungskurs kann ein Zertifikat erneuern, wenn er innerhalb von zwei Jahren nach dessen Ablauf absolviert wird.

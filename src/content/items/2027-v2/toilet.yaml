@@ -1,0 +1,49 @@
+id: toilet
+drawing: toilet
+rules:
+  - 3.18.1
+  - 3.18.2
+name:
+  en: Toilet or fitted bucket
+  de: Bordtoilette oder befestigter Eimer (Toilet or Fitted Bucket)
+applies:
+  osr2:
+    section: below-deck
+    order: 50
+    pages:
+      - 13
+    cardHash: sha256:2db19cb0d4eaa4d9d870d696ec8cce9b5c4a6f92ae14ade7f3f914c0ea03ec43
+    sourceHash: sha256:80e2c42d53f73f4e1645bda9e3b4f8027cf969770dc83c25ab4ae76ea65db72f
+    explanation:
+      en: This item is a toilet for onboard use. For categories MoMu 0, 1 and 2, it must be permanently installed; a fitted bucket is not listed as an alternative.
+      de: Bei diesem Ausrüstungspunkt geht es um eine Toilette an Bord. Für die Kategorien MoMu 0, 1 und 2 muss sie fest eingebaut sein; ein Eimer ist nicht als Alternative aufgeführt.
+  osr3:
+    section: below-deck
+    order: 50
+    pages:
+      - 12
+    cardHash: sha256:2b3c8b63357b4090901fe97f7673e11cf3c75ebe79e752f74b3ca743b04a2a3d
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This item provides a toilet facility on board. For categories MoMu 3 and 4, the boat must have either a permanently installed toilet or a fitted bucket.
+      de: Dieser Ausrüstungspunkt verlangt eine Toilettenmöglichkeit an Bord. Für die Kategorien MoMu 3 und 4 muss das Boot entweder eine fest eingebaute Toilette oder einen dafür vorgesehenen Eimer haben.
+  osr3-liferaft:
+    section: below-deck
+    order: 50
+    pages:
+      - 12
+    cardHash: sha256:2b3c8b63357b4090901fe97f7673e11cf3c75ebe79e752f74b3ca743b04a2a3d
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This item provides a toilet facility on board. For categories MoMu 3 and 4, the boat must have either a permanently installed toilet or a fitted bucket.
+      de: Dieser Ausrüstungspunkt verlangt eine Toilettenmöglichkeit an Bord. Für die Kategorien MoMu 3 und 4 muss das Boot entweder eine fest eingebaute Toilette oder einen dafür vorgesehenen Eimer haben.
+  osr4:
+    section: below-deck
+    order: 50
+    pages:
+      - 11
+    cardHash: sha256:2b3c8b63357b4090901fe97f7673e11cf3c75ebe79e752f74b3ca743b04a2a3d
+    sourceHash: sha256:3e805f4d3506548a3f18ba87c516b788b7725c3057faa7b9b0e8da9b92f83fe8
+    explanation:
+      en: This item provides a toilet facility on board. For categories MoMu 3 and 4, the boat must have either a permanently installed toilet or a fitted bucket.
+      de: Dieser Ausrüstungspunkt verlangt eine Toilettenmöglichkeit an Bord. Für die Kategorien MoMu 3 und 4 muss das Boot entweder eine fest eingebaute Toilette oder einen dafür vorgesehenen Eimer haben.

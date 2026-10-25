@@ -1,0 +1,48 @@
+id: heavy-item-fastening
+drawing: heavy-item-fastening
+rules:
+  - 2.04.2
+name:
+  en: Heavy-item fastening
+  de: Sicherung schwerer Gegenstände (Heavy-item Fastening)
+applies:
+  osr2:
+    section: general
+    order: 20
+    pages:
+      - 6
+    cardHash: sha256:93cad80a6f031b625d1331368a16db4b40b30bdbeeaf901e0fb720fcd273b545
+    sourceHash: sha256:6a631cc0dee3edff0159ff3a71599c6fa1af4fc01ef33275cb8a7befa74c671f
+    explanation:
+      en: Heavy items on the boat must be kept from shifting. Each must be permanently installed or securely fastened; the rule gives no specific weight threshold or fastening method.
+      de: Schwere Gegenstände an Bord müssen gegen Verrutschen gesichert sein. Sie müssen dauerhaft eingebaut oder sicher befestigt sein; ein bestimmtes Gewicht oder eine bestimmte Befestigungsart ist nicht vorgeschrieben.
+  osr3:
+    section: general
+    order: 20
+    pages:
+      - 6
+    cardHash: sha256:93cad80a6f031b625d1331368a16db4b40b30bdbeeaf901e0fb720fcd273b545
+    sourceHash: sha256:8f8c1061d73f2a99647c857f13d2ccc39d822bcb38b4c7d4fb403966b848df3a
+    explanation:
+      en: Heavy items on the boat must be kept from shifting. Each must be permanently installed or securely fastened; the rule gives no specific weight threshold or fastening method.
+      de: Schwere Gegenstände an Bord müssen gegen Verrutschen gesichert sein. Sie müssen dauerhaft eingebaut oder sicher befestigt sein; ein bestimmtes Gewicht oder eine bestimmte Befestigungsart ist nicht vorgeschrieben.
+  osr3-liferaft:
+    section: general
+    order: 20
+    pages:
+      - 6
+    cardHash: sha256:93cad80a6f031b625d1331368a16db4b40b30bdbeeaf901e0fb720fcd273b545
+    sourceHash: sha256:8f8c1061d73f2a99647c857f13d2ccc39d822bcb38b4c7d4fb403966b848df3a
+    explanation:
+      en: Heavy items on the boat must be kept from shifting. Each must be permanently installed or securely fastened; the rule gives no specific weight threshold or fastening method.
+      de: Schwere Gegenstände an Bord müssen gegen Verrutschen gesichert sein. Sie müssen dauerhaft eingebaut oder sicher befestigt sein; ein bestimmtes Gewicht oder eine bestimmte Befestigungsart ist nicht vorgeschrieben.
+  osr4:
+    section: general
+    order: 20
+    pages:
+      - 6
+    cardHash: sha256:93cad80a6f031b625d1331368a16db4b40b30bdbeeaf901e0fb720fcd273b545
+    sourceHash: sha256:ad3a7adaa3fe24a1af631a7ddecb6bb62730701b3a9c6da5d0c6916974369400
+    explanation:
+      en: Heavy items on the boat must be kept from shifting. Each must be permanently installed or securely fastened; the rule gives no specific weight threshold or fastening method.
+      de: Schwere Gegenstände an Bord müssen gegen Verrutschen gesichert sein. Sie müssen dauerhaft eingebaut oder sicher befestigt sein; ein bestimmtes Gewicht oder eine bestimmte Befestigungsart ist nicht vorgeschrieben.

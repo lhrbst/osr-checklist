@@ -1,0 +1,50 @@
+id: mainsail-heavy-weather-option
+drawing: mainsail-heavy-weather-option
+rules:
+  - 4.26.2
+  - 4.26.3
+  - 4.26.4
+name:
+  en: Trysail or heavy-weather reefing option
+  de: Trysegel oder Starkwind-Reffoption (Trysail or Reefing)
+applies:
+  osr2:
+    section: demonstrate-use
+    order: 100
+    pages:
+      - 20
+    cardHash: sha256:7acea163d2b09a9715e280ad25b35545b78c701c8ba6952184b804b9aa802604
+    sourceHash: sha256:47a4897c570a091b9eb2a520d90d99df380f0b77d2017921be9bdaedcaaab09d
+    explanation:
+      en: For boats in categories MoMu 1 and 2, this is the storm-sail option for reducing mainsail area in heavy weather. Carry either a storm trysail or a mainsail reefing arrangement that can reduce the luff by at least 50%; a suitable rotating wing mast is also permitted.
+      de: Für Boote der Kategorien MoMu 1 und 2 ist dies die Möglichkeit, die Segelfläche des Großsegels bei schwerem Wetter zu verringern. Vorgeschrieben ist entweder ein Trysegel oder eine Reffmöglichkeit, mit der sich das Vorliek des Großsegels um mindestens 50 % verkürzen lässt; bei geeignetem rotierendem Flügelmast ist auch dieser zulässig.
+  osr3:
+    section: demonstrate-use
+    order: 100
+    pages:
+      - 17
+    cardHash: sha256:399e61ae91fd65700a963a19808b8c36117541efdcc2eab1ca48c5c5258fb868
+    sourceHash: sha256:562d37b39a07d7b23740fb3a0f66cb0a89db7c8c1040780a5c2a96582e883908
+    explanation:
+      en: For boats in category Mo3, this is the storm-sail option for reducing mainsail area in heavy weather. Carry either a storm trysail or a mainsail reefing arrangement that can reduce the luff by at least 40%; a suitable rotating wing mast is also permitted.
+      de: Für Boote der Kategorie Mo3 ist dies die Möglichkeit, die Segelfläche des Großsegels bei schwerem Wetter zu verringern. Vorgeschrieben ist entweder ein Trysegel oder eine Reffmöglichkeit, mit der sich das Vorliek des Großsegels um mindestens 40 % verkürzen lässt; bei geeignetem rotierendem Flügelmast ist auch dieser zulässig.
+  osr3-liferaft:
+    section: demonstrate-use
+    order: 100
+    pages:
+      - 19
+    cardHash: sha256:399e61ae91fd65700a963a19808b8c36117541efdcc2eab1ca48c5c5258fb868
+    sourceHash: sha256:61a4c8afc9cc2db9ff641e274e3dc2b3f7b91d3b04dbe5a6cf522186cc008993
+    explanation:
+      en: For boats in category Mo3, this is the storm-sail option for reducing mainsail area in heavy weather. Carry either a storm trysail or a mainsail reefing arrangement that can reduce the luff by at least 40%; a suitable rotating wing mast is also permitted.
+      de: Für Boote der Kategorie Mo3 ist dies die Möglichkeit, die Segelfläche des Großsegels bei schwerem Wetter zu verringern. Vorgeschrieben ist entweder ein Trysegel oder eine Reffmöglichkeit, mit der sich das Vorliek des Großsegels um mindestens 40 % verkürzen lässt; bei geeignetem rotierendem Flügelmast ist auch dieser zulässig.
+  osr4:
+    section: demonstrate-use
+    order: 30
+    pages:
+      - 14
+    cardHash: sha256:472c9f78e1c265f5efe611e6587470f74e8efe4e4eae46c121e96b26ee7ec587
+    sourceHash: sha256:0204fbe6a4b0071964c50e5609b62923a9e1a4411fd9e4c8c7df129b23a41514
+    explanation:
+      en: For boats in category MoMu 4, this is the heavy-weather option for reducing or replacing the mainsail. The boat must have mainsail reefing that can reduce the luff by 12.5%, or a heavy-weather jib; a suitable rotating wing mast or, for a boat without a forestay, a heavy-weather sail is also permitted.
+      de: Für Boote der Kategorie MoMu 4 ist dies die Möglichkeit, das Großsegel bei schwerem Wetter zu verkleinern oder zu ersetzen. Vorgeschrieben ist entweder eine Reffmöglichkeit, mit der sich das Vorliek des Großsegels um 12,5 % verkürzen lässt, oder eine Schwerwetterfock; zulässig ist auch ein geeigneter rotierender Flügelmast oder bei einem Boot ohne Vorstag ein Schwerwettersegel.

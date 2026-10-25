@@ -1,0 +1,48 @@
+id: navigation-lights
+drawing: navigation-lights
+rules:
+  - 3.27.1
+name:
+  en: Unobscured navigation lights
+  de: Unverdeckte Positionslichter (Navigation Lights)
+applies:
+  osr2:
+    section: demonstrate-use
+    order: 10
+    pages:
+      - 14
+    cardHash: sha256:8f12817940e42e26e12e60c0b69b430181b7ef29e78729b81ac917c81570df25
+    sourceHash: sha256:16cb8a9ea3b4fd5c29578265a8522bcba17c08263e6b382e472298939e57de31
+    explanation:
+      en: The boat’s navigation lights must meet the requirements in Part C and Technical Annex I of the International Regulations for Preventing Collisions at Sea, and be shown whenever those rules require them. They must be mounted above the sheerline where sails or the boat’s heel will not hide them.
+      de: Die Navigationslichter müssen den Anforderungen von Teil C und Anhang I (Technischer Anhang) der Internationalen Regeln zur Verhütung von Zusammenstößen auf See entsprechen und gezeigt werden, wenn diese Regeln es verlangen. Sie müssen oberhalb der Deckslinie angebracht sein, sodass weder Segel noch Krängung sie verdecken.
+  osr3:
+    section: demonstrate-use
+    order: 10
+    pages:
+      - 13
+    cardHash: sha256:8f12817940e42e26e12e60c0b69b430181b7ef29e78729b81ac917c81570df25
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: The boat’s navigation lights must meet the requirements in Part C and Technical Annex I of the International Regulations for Preventing Collisions at Sea, and be shown whenever those rules require them. They must be mounted above the sheerline where sails or the boat’s heel will not hide them.
+      de: Die Navigationslichter müssen den Anforderungen von Teil C und Anhang I (Technischer Anhang) der Internationalen Regeln zur Verhütung von Zusammenstößen auf See entsprechen und gezeigt werden, wenn diese Regeln es verlangen. Sie müssen oberhalb der Deckslinie angebracht sein, sodass weder Segel noch Krängung sie verdecken.
+  osr3-liferaft:
+    section: demonstrate-use
+    order: 10
+    pages:
+      - 13
+    cardHash: sha256:8f12817940e42e26e12e60c0b69b430181b7ef29e78729b81ac917c81570df25
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: The boat’s navigation lights must meet the requirements in Part C and Technical Annex I of the International Regulations for Preventing Collisions at Sea, and be shown whenever those rules require them. They must be mounted above the sheerline where sails or the boat’s heel will not hide them.
+      de: Die Navigationslichter müssen den Anforderungen von Teil C und Anhang I (Technischer Anhang) der Internationalen Regeln zur Verhütung von Zusammenstößen auf See entsprechen und gezeigt werden, wenn diese Regeln es verlangen. Sie müssen oberhalb der Deckslinie angebracht sein, sodass weder Segel noch Krängung sie verdecken.
+  osr4:
+    section: demonstrate-use
+    order: 10
+    pages:
+      - 11
+    cardHash: sha256:8f12817940e42e26e12e60c0b69b430181b7ef29e78729b81ac917c81570df25
+    sourceHash: sha256:3e805f4d3506548a3f18ba87c516b788b7725c3057faa7b9b0e8da9b92f83fe8
+    explanation:
+      en: The boat’s navigation lights must meet the requirements in Part C and Technical Annex I of the International Regulations for Preventing Collisions at Sea, and be shown whenever those rules require them. They must be mounted above the sheerline where sails or the boat’s heel will not hide them.
+      de: Die Navigationslichter müssen den Anforderungen von Teil C und Anhang I (Technischer Anhang) der Internationalen Regeln zur Verhütung von Zusammenstößen auf See entsprechen und gezeigt werden, wenn diese Regeln es verlangen. Sie müssen oberhalb der Deckslinie angebracht sein, sodass weder Segel noch Krängung sie verdecken.

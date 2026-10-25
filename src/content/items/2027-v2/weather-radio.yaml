@@ -1,0 +1,48 @@
+id: weather-radio
+drawing: weather-radio
+rules:
+  - 3.29.4
+name:
+  en: Weather radio receiver
+  de: Wetterfunkempfänger (Weather Radio Receiver)
+applies:
+  osr2:
+    section: bunks
+    order: 10
+    pages:
+      - 15
+    cardHash: sha256:3c4d7b3364b8508d620a670e5c2c4fe893ef896983ac60f1e6d917b0e6640392
+    sourceHash: sha256:75fc5e83b4abce3cee2a14583b094a9c3b3982645c5bb9b10f6bca226bc5423d
+    explanation:
+      en: Carry a second radio receiver that can receive weather bulletins. The handheld VHF required for a grab bag may also serve as this receiver; no particular size or power rating is specified here.
+      de: An Bord muss ein zweiter Funkempfänger sein, der Wetterberichte empfangen kann. Das für eine Grab Bag vorgeschriebene Handfunkgerät kann diese Aufgabe ebenfalls erfüllen; eine bestimmte Größe oder Sendeleistung ist hier nicht festgelegt.
+  osr3:
+    section: bunks
+    order: 10
+    pages:
+      - 14
+    cardHash: sha256:3c4d7b3364b8508d620a670e5c2c4fe893ef896983ac60f1e6d917b0e6640392
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: Carry a second radio receiver that can receive weather bulletins. The handheld VHF required for a grab bag may also serve as this receiver; no particular size or power rating is specified here.
+      de: An Bord muss ein zweiter Funkempfänger sein, der Wetterberichte empfangen kann. Das für eine Grab Bag vorgeschriebene Handfunkgerät kann diese Aufgabe ebenfalls erfüllen; eine bestimmte Größe oder Sendeleistung ist hier nicht festgelegt.
+  osr3-liferaft:
+    section: bunks
+    order: 10
+    pages:
+      - 14
+    cardHash: sha256:3c4d7b3364b8508d620a670e5c2c4fe893ef896983ac60f1e6d917b0e6640392
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: Carry a second radio receiver that can receive weather bulletins. The handheld VHF required for a grab bag may also serve as this receiver; no particular size or power rating is specified here.
+      de: An Bord muss ein zweiter Funkempfänger sein, der Wetterberichte empfangen kann. Das für eine Grab Bag vorgeschriebene Handfunkgerät kann diese Aufgabe ebenfalls erfüllen; eine bestimmte Größe oder Sendeleistung ist hier nicht festgelegt.
+  osr4:
+    section: bunks
+    order: 20
+    pages:
+      - 12
+    cardHash: sha256:3c4d7b3364b8508d620a670e5c2c4fe893ef896983ac60f1e6d917b0e6640392
+    sourceHash: sha256:8109faf1b364189c4a08a3612a838f89e4dc639f94b1a0e45d97bca7b0f22045
+    explanation:
+      en: Carry a second radio receiver that can receive weather bulletins. It may be the handheld VHF carried under the applicable requirements; no particular size or power rating is specified here.
+      de: An Bord muss ein zweiter Funkempfänger sein, der Wetterberichte empfangen kann. Dafür kann das nach den einschlägigen Vorschriften mitzuführende Handfunkgerät verwendet werden; eine bestimmte Größe oder Sendeleistung ist hier nicht festgelegt.

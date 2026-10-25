@@ -1,0 +1,49 @@
+id: forward-hatch-opening
+drawing: forward-hatch-opening
+rules:
+  - 3.08.1
+name:
+  en: Outward-opening forward hatches
+  de: Nach außen öffnende Vorschiffsluken (Forward Hatches)
+applies:
+  osr2:
+    section: general
+    order: 40
+    pages:
+      - 9
+      - 10
+    cardHash: sha256:3adf8ca7eb71c871dccadd5b68557d62037274216e3cb0cd81e7af72e7ddc959
+    sourceHash: sha256:b2d8699424cee73ded4fd432c1263c67984ac749906c2b24f7b195efbc56864f
+    explanation:
+      en: Hatch covers forward of the boat’s maximum-beam station must open outward, not into the boat. This does not apply to hatches in the side of a coachroof or to ports smaller than 0.071 m² (110 in²).
+      de: Lukendeckel vor der Station der größten Bootsbreite dürfen sich nicht nach innen öffnen. Ausgenommen sind Luken in der Seitenfläche eines Kajütaufbaus sowie Öffnungen mit einer Fläche unter 0,071 m² (110 in²).
+  osr3:
+    section: general
+    order: 50
+    pages:
+      - 8
+    cardHash: sha256:3adf8ca7eb71c871dccadd5b68557d62037274216e3cb0cd81e7af72e7ddc959
+    sourceHash: sha256:e3f4bc78c3f9f35f118c899e4a708bb743fe2e7706d3251d67b8b86efb96be44
+    explanation:
+      en: Hatch covers forward of the boat’s maximum-beam station must open outward, not into the boat. This does not apply to hatches in the side of a coachroof or to ports smaller than 0.071 m² (110 in²).
+      de: Lukendeckel vor der Station der größten Bootsbreite dürfen sich nicht nach innen öffnen. Ausgenommen sind Luken in der Seitenfläche eines Kajütaufbaus sowie Öffnungen mit einer Fläche unter 0,071 m² (110 in²).
+  osr3-liferaft:
+    section: general
+    order: 50
+    pages:
+      - 8
+    cardHash: sha256:3adf8ca7eb71c871dccadd5b68557d62037274216e3cb0cd81e7af72e7ddc959
+    sourceHash: sha256:e3f4bc78c3f9f35f118c899e4a708bb743fe2e7706d3251d67b8b86efb96be44
+    explanation:
+      en: Hatch covers forward of the boat’s maximum-beam station must open outward, not into the boat. This does not apply to hatches in the side of a coachroof or to ports smaller than 0.071 m² (110 in²).
+      de: Lukendeckel vor der Station der größten Bootsbreite dürfen sich nicht nach innen öffnen. Ausgenommen sind Luken in der Seitenfläche eines Kajütaufbaus sowie Öffnungen mit einer Fläche unter 0,071 m² (110 in²).
+  osr4:
+    section: general
+    order: 40
+    pages:
+      - 7
+    cardHash: sha256:3adf8ca7eb71c871dccadd5b68557d62037274216e3cb0cd81e7af72e7ddc959
+    sourceHash: sha256:9bf138db443ff55bba02412185849f8d64447f567df14e346de9d5d6d4767330
+    explanation:
+      en: Hatch covers forward of the boat’s maximum-beam station must open outward, not into the boat. This does not apply to hatches in the side of a coachroof or to ports smaller than 0.071 m² (110 in²).
+      de: Lukendeckel vor der Station der größten Bootsbreite dürfen sich nicht nach innen öffnen. Ausgenommen sind Luken in der Seitenfläche eines Kajütaufbaus sowie Öffnungen mit einer Fläche unter 0,071 m² (110 in²).
