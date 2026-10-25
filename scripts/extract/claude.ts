@@ -34,27 +34,35 @@ export async function extractStructure(
   pdfs: Record<Category, Buffer>,
   previous: { id: string; rules: string[]; name: Localized }[],
 ): Promise<Extraction> {
-  const message = await client.messages.parse({
-    model: model(),
-    max_tokens: 32000,
-    output_config: { effort: "high", format: zodOutputFormat(ExtractionSchema) },
-    messages: [
-      {
-        role: "user",
-        content: [
-          ...CATEGORIES.map((category) => ({
-            type: "document" as const,
-            title: category,
-            source: { type: "base64" as const, media_type: "application/pdf" as const, data: pdfs[category].toString("base64") },
-          })),
-          {
-            type: "text" as const,
-            text: EXTRACTION_PROMPT + (previous.map((p) => `${p.id} | ${p.rules.join(", ")} | ${p.name.en}`).join("\n") || "(none)"),
-          },
-        ],
-      },
-    ],
-  });
+  const message = await client.messages
+    .stream({
+      model: model(),
+      max_tokens: 32000,
+      output_config: { effort: "high", format: zodOutputFormat(ExtractionSchema) },
+      messages: [
+        {
+          role: "user",
+          content: [
+            ...CATEGORIES.map((category) => ({
+              type: "document" as const,
+              title: category,
+              source: {
+                type: "base64" as const,
+                media_type: "application/pdf" as const,
+                data: pdfs[category].toString("base64"),
+              },
+            })),
+            {
+              type: "text" as const,
+              text:
+                EXTRACTION_PROMPT +
+                (previous.map((p) => `${p.id} | ${p.rules.join(", ")} | ${p.name.en}`).join("\n") || "(none)"),
+            },
+          ],
+        },
+      ],
+    })
+    .finalMessage();
   return parsedOrThrow(message, "extractStructure");
 }
 
@@ -72,16 +80,20 @@ export async function generateExplanations(
 ): Promise<Partial<Record<Category, Localized>>> {
   const categories = Object.keys(ruleTextByCat) as Category[];
   const sources = categories
-    .map((c) => `<regulation_text category="${c}" label="${CATEGORY_LABEL[c].en}">\n${ruleTextByCat[c]}\n</regulation_text>`)
+    .map(
+      (c) =>
+        `<regulation_text category="${c}" label="${CATEGORY_LABEL[c].en}">\n${ruleTextByCat[c]}\n</regulation_text>`,
+    )
     .join("\n\n");
-  const message = await client.messages.parse({
-    model: model(),
-    max_tokens: 8000,
-    output_config: { effort: "high", format: zodOutputFormat(ExplanationSchema) },
-    messages: [
-      {
-        role: "user",
-        content: `${sources}
+  const message = await client.messages
+    .stream({
+      model: model(),
+      max_tokens: 8000,
+      output_config: { effort: "high", format: zodOutputFormat(ExplanationSchema) },
+      messages: [
+        {
+          role: "user",
+          content: `${sources}
 
 Item: "${item.name.en}" (OSR ${item.rules.join(", ")}).
 
@@ -90,27 +102,31 @@ For each of these categories: ${categories.join(", ")} — write a plain-languag
 - Do not invent requirements and do not copy the regulation wording; short technical terms are fine.
 - German uses common German sailing terminology.
 Return only the categories listed.`,
-      },
-    ],
-  });
+        },
+      ],
+    })
+    .finalMessage();
   return parsedOrThrow(message, `generateExplanations(${item.id})`);
 }
 
 export async function generateDrawing(client: Anthropic, item: ExtractedItem): Promise<string> {
-  const message = await client.messages.create({
-    model: model(),
-    max_tokens: 8000,
-    output_config: { effort: "high" },
-    messages: [
-      {
-        role: "user",
-        content: `Draw a simple, recognisable line drawing of this piece of sailing safety equipment: "${item.name.en}" (OSR ${item.rules.join(", ")}).
+  const message = await client.messages
+    .stream({
+      model: model(),
+      max_tokens: 8000,
+      output_config: { effort: "high" },
+      messages: [
+        {
+          role: "user",
+          content: `Draw a simple, recognisable line drawing of this piece of sailing safety equipment: "${item.name.en}" (OSR ${item.rules.join(", ")}).
 
 Rules: one <svg> element with xmlns="http://www.w3.org/2000/svg" and viewBox="0 0 200 200"; stroke-only line art (fill="none"), stroke="currentColor", stroke-width 3–5, round caps and joins; no text or letters, no <text>, <style>, <script>, <image> or external references; under 8 KB. Reply with the SVG only.`,
-      },
-    ],
-  });
-  if (message.stop_reason !== "end_turn") throw new Error(`generateDrawing(${item.id}): stop_reason ${message.stop_reason}`);
+        },
+      ],
+    })
+    .finalMessage();
+  if (message.stop_reason !== "end_turn")
+    throw new Error(`generateDrawing(${item.id}): stop_reason ${message.stop_reason}`);
   const text = message.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
   const svg = text.match(/<svg[\s\S]*<\/svg>/)?.[0];
   if (!svg) throw new Error(`generateDrawing(${item.id}): no <svg> in reply`);

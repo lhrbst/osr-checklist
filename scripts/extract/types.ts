@@ -34,7 +34,7 @@ export type ExtractedSection = Extraction["sections"][number];
 
 export interface Attention {
   itemId?: string;
-  category: Category;
+  category?: Category;
   rule?: string;
   message: string;
 }
