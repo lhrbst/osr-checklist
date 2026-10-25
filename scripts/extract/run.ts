@@ -73,6 +73,7 @@ async function main() {
       generateExplanations: (item, text) => generateExplanations(client, item, text),
       generateDrawing: (item) => generateDrawing(client, item),
       existingDrawings,
+      log: (line) => console.log(line),
     },
   );
 
