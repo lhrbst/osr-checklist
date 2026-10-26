@@ -1,0 +1,49 @@
+id: fire-extinguishers
+drawing: fire-extinguishers
+rules:
+  - 4.05.2
+  - 4.05.3
+name:
+  en: Two fire extinguishers
+  de: Zwei Feuerlöscher (Fire Extinguishers)
+applies:
+  osr2:
+    section: below-deck
+    order: 180
+    pages:
+      - 16
+    cardHash: sha256:1029527b876a8b695ed3d9d79a7f775bc2192c96ef758fdb177cf2054b060ac6
+    sourceHash: sha256:18dc1e7e115127c2f4fa9d95ac21dcf348fcba3a8e005ac042e9df9b30bb27bd
+    explanation:
+      en: You must carry two fire extinguishers, each containing 2 kg of dry powder or an equivalent extinguishing agent. They must be stowed in different parts of the boat.
+      de: An Bord müssen zwei Feuerlöscher mit jeweils 2 kg Löschpulver oder einem gleichwertigen Löschmittel sein. Sie müssen an unterschiedlichen Stellen im Boot untergebracht sein.
+  osr3:
+    section: below-deck
+    order: 180
+    pages:
+      - 15
+    cardHash: sha256:1029527b876a8b695ed3d9d79a7f775bc2192c96ef758fdb177cf2054b060ac6
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: You must carry two fire extinguishers, each containing 2 kg of dry powder or an equivalent extinguishing agent. They must be stowed in different parts of the boat.
+      de: An Bord müssen zwei Feuerlöscher mit jeweils 2 kg Löschpulver oder einem gleichwertigen Löschmittel sein. Sie müssen an unterschiedlichen Stellen im Boot untergebracht sein.
+  osr3-liferaft:
+    section: below-deck
+    order: 180
+    pages:
+      - 15
+    cardHash: sha256:1029527b876a8b695ed3d9d79a7f775bc2192c96ef758fdb177cf2054b060ac6
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: You must carry two fire extinguishers, each containing 2 kg of dry powder or an equivalent extinguishing agent. They must be stowed in different parts of the boat.
+      de: An Bord müssen zwei Feuerlöscher mit jeweils 2 kg Löschpulver oder einem gleichwertigen Löschmittel sein. Sie müssen an unterschiedlichen Stellen im Boot untergebracht sein.
+  osr4:
+    section: below-deck
+    order: 120
+    pages:
+      - 13
+    cardHash: sha256:4b71b5fe12a7964fed06db801448355c8ec7d730992f2b5c15bf941a38c7d95c
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
+    explanation:
+      en: You must carry two fire extinguishers, stowed in different parts of the boat. This category does not specify their size or extinguishing agent.
+      de: An Bord müssen zwei Feuerlöscher an unterschiedlichen Stellen im Boot untergebracht sein. Diese Kategorie legt weder eine Größe noch ein Löschmittel fest.

@@ -1,0 +1,38 @@
+id: foredeck-toe-rail
+drawing: foredeck-toe-rail
+rules:
+  - 3.17.1
+name:
+  en: Foredeck toe rail
+  de: Fußreling am Vorschiff (Toe Rail)
+applies:
+  osr2:
+    section: general
+    order: 100
+    pages:
+      - 13
+    cardHash: sha256:280309debbad10bb80a7b4852c4408892008459d5cb7886daf156efab75bf106
+    sourceHash: sha256:80e2c42d53f73f4e1645bda9e3b4f8027cf969770dc83c25ab4ae76ea65db72f
+    explanation:
+      en: A foredeck toe rail is a permanently fitted raised rail along the deck edge to help keep sailors’ feet from slipping overboard. It must be at least 25 mm (1 in) high and be at, or no more than 100 mm (4 in) inboard of, the deck perimeter, extending at least forward of the mast.
+      de: Eine Vorschiffs-Fußreling ist eine fest montierte erhöhte Leiste am Decksrand, die den Halt an Deck unterstützt. Sie muss mindestens 25 mm hoch sein, am Decksrand oder höchstens 100 mm nach innen versetzt liegen und mindestens bis vor den Mast reichen.
+  osr3:
+    section: general
+    order: 110
+    pages:
+      - 12
+    cardHash: sha256:280309debbad10bb80a7b4852c4408892008459d5cb7886daf156efab75bf106
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: A foredeck toe rail is a permanently fitted raised rail along the deck edge to help keep sailors’ feet from slipping overboard. It must be at least 25 mm (1 in) high and be at, or no more than 100 mm (4 in) inboard of, the deck perimeter, extending at least forward of the mast.
+      de: Eine Vorschiffs-Fußreling ist eine fest montierte erhöhte Leiste am Decksrand, die den Halt an Deck unterstützt. Sie muss mindestens 25 mm hoch sein, am Decksrand oder höchstens 100 mm nach innen versetzt liegen und mindestens bis vor den Mast reichen.
+  osr3-liferaft:
+    section: general
+    order: 110
+    pages:
+      - 12
+    cardHash: sha256:280309debbad10bb80a7b4852c4408892008459d5cb7886daf156efab75bf106
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: A foredeck toe rail is a permanently fitted raised rail along the deck edge to help keep sailors’ feet from slipping overboard. It must be at least 25 mm (1 in) high and be at, or no more than 100 mm (4 in) inboard of, the deck perimeter, extending at least forward of the mast.
+      de: Eine Vorschiffs-Fußreling ist eine fest montierte erhöhte Leiste am Decksrand, die den Halt an Deck unterstützt. Sie muss mindestens 25 mm hoch sein, am Decksrand oder höchstens 100 mm nach innen versetzt liegen und mindestens bis vor den Mast reichen.

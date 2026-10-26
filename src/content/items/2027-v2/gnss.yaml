@@ -1,0 +1,28 @@
+id: gnss
+drawing: gnss
+rules:
+  - 3.29.8
+name:
+  en: GNSS receiver
+  de: Satellitennavigationsempfänger (GNSS)
+applies:
+  osr3:
+    section: general
+    order: 220
+    pages:
+      - 14
+    cardHash: sha256:c97147d5c731672d8a583714b1886d79e983b4d438e83b0fa737860afb6a48f1
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: A GNSS receiver uses satellite signals to determine the boat’s position. This category requires one GNSS receiver; no size or performance rating is specified.
+      de: Ein GNSS-Empfänger bestimmt mithilfe von Satellitensignalen die Position des Boots. In dieser Kategorie ist ein GNSS-Empfänger vorgeschrieben; Größe oder Leistungswerte sind nicht festgelegt.
+  osr3-liferaft:
+    section: general
+    order: 220
+    pages:
+      - 14
+    cardHash: sha256:c97147d5c731672d8a583714b1886d79e983b4d438e83b0fa737860afb6a48f1
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: A GNSS receiver uses satellite signals to determine the boat’s position. This category requires one GNSS receiver; no size or performance rating is specified.
+      de: Ein GNSS-Empfänger bestimmt mithilfe von Satellitensignalen die Position des Boots. In dieser Kategorie ist ein GNSS-Empfänger vorgeschrieben; Größe oder Leistungswerte sind nicht festgelegt.

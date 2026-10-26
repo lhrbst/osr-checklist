@@ -1,0 +1,38 @@
+id: emergency-tiller
+drawing: emergency-tiller
+rules:
+  - 4.15.1
+name:
+  en: Emergency tiller
+  de: Notpinne (Emergency Tiller)
+applies:
+  osr2:
+    section: demonstrate-use
+    order: 80
+    pages:
+      - 17
+    cardHash: sha256:88b76e625c3afc19f930873d1b3de34c3fa40d74a7ffd24f0c6846d17c7f22c9
+    sourceHash: sha256:2944ac73b833a8482dad24a4619e48db0d67abc52c4e6a5fd3ef8f91e4afc411
+    explanation:
+      en: An emergency tiller is a backup tiller that can be fitted to the rudder stock. It is required unless the boat’s main steering uses an unbreakable metal tiller, or two independent methods of controlling the rudder are available that share no components apart from the rudder stock.
+      de: Eine Notpinne ist eine Ersatzpinne, die auf den Ruderschaft gesetzt werden kann. Sie ist vorgeschrieben, außer wenn die Hauptsteuerung über eine unzerbrechliche Metallpinne erfolgt oder zwei voneinander unabhängige Steuerungsmöglichkeiten für das Ruder vorhanden sind, die außer dem Ruderschaft keine Bauteile gemeinsam haben.
+  osr3:
+    section: demonstrate-use
+    order: 80
+    pages:
+      - 16
+    cardHash: sha256:88b76e625c3afc19f930873d1b3de34c3fa40d74a7ffd24f0c6846d17c7f22c9
+    sourceHash: sha256:a3f01b0e4a5ced00bcac81b885ce22061d4d154145e3e4e31bb161998bb57fee
+    explanation:
+      en: An emergency tiller is a backup tiller that can be fitted to the rudder stock. It is required unless the boat’s main steering uses an unbreakable metal tiller, or two independent methods of controlling the rudder are available that share no components apart from the rudder stock.
+      de: Eine Notpinne ist eine Ersatzpinne, die auf den Ruderschaft gesetzt werden kann. Sie ist vorgeschrieben, außer wenn die Hauptsteuerung über eine unzerbrechliche Metallpinne erfolgt oder zwei voneinander unabhängige Steuerungsmöglichkeiten für das Ruder vorhanden sind, die außer dem Ruderschaft keine Bauteile gemeinsam haben.
+  osr3-liferaft:
+    section: demonstrate-use
+    order: 80
+    pages:
+      - 16
+    cardHash: sha256:88b76e625c3afc19f930873d1b3de34c3fa40d74a7ffd24f0c6846d17c7f22c9
+    sourceHash: sha256:35a1fa40999bd9cb9f6f6c497e5d81ffa5c1cbc6dcaba6296f91b702074922eb
+    explanation:
+      en: An emergency tiller is a backup tiller that can be fitted to the rudder stock. It is required unless the boat’s main steering uses an unbreakable metal tiller, or two independent methods of controlling the rudder are available that share no components apart from the rudder stock.
+      de: Eine Notpinne ist eine Ersatzpinne, die auf den Ruderschaft gesetzt werden kann. Sie ist vorgeschrieben, außer wenn die Hauptsteuerung über eine unzerbrechliche Metallpinne erfolgt oder zwei voneinander unabhängige Steuerungsmöglichkeiten für das Ruder vorhanden sind, die außer dem Ruderschaft keine Bauteile gemeinsam haben.

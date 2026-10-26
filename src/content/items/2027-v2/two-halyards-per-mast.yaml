@@ -1,0 +1,48 @@
+id: two-halyards-per-mast
+drawing: two-halyards-per-mast
+rules:
+  - "3.25"
+name:
+  en: Two halyards per mast
+  de: Zwei Fallen je Mast (Halyards)
+applies:
+  osr2:
+    section: general
+    order: 160
+    pages:
+      - 14
+    cardHash: sha256:90b8cc2e3ead60119c904ce7b92268d684cd11b77f373d94020b39bb515fd40a
+    sourceHash: sha256:16cb8a9ea3b4fd5c29578265a8522bcba17c08263e6b382e472298939e57de31
+    explanation:
+      en: Halyards are lines used to hoist sails. Each mast must have at least two, and each must be capable of hoisting a sail.
+      de: Fallreeps sind Leinen zum Setzen von Segeln. Jeder Mast muss mindestens zwei davon haben, und jedes Fallreep muss ein Segel setzen können.
+  osr3:
+    section: general
+    order: 170
+    pages:
+      - 12
+    cardHash: sha256:90b8cc2e3ead60119c904ce7b92268d684cd11b77f373d94020b39bb515fd40a
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: Halyards are lines used to hoist sails. Each mast must have at least two, and each must be capable of hoisting a sail.
+      de: Fallreeps sind Leinen zum Setzen von Segeln. Jeder Mast muss mindestens zwei davon haben, und jedes Fallreep muss ein Segel setzen können.
+  osr3-liferaft:
+    section: general
+    order: 170
+    pages:
+      - 12
+    cardHash: sha256:90b8cc2e3ead60119c904ce7b92268d684cd11b77f373d94020b39bb515fd40a
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: Halyards are lines used to hoist sails. Each mast must have at least two, and each must be capable of hoisting a sail.
+      de: Fallreeps sind Leinen zum Setzen von Segeln. Jeder Mast muss mindestens zwei davon haben, und jedes Fallreep muss ein Segel setzen können.
+  osr4:
+    section: general
+    order: 140
+    pages:
+      - 11
+    cardHash: sha256:90b8cc2e3ead60119c904ce7b92268d684cd11b77f373d94020b39bb515fd40a
+    sourceHash: sha256:3e805f4d3506548a3f18ba87c516b788b7725c3057faa7b9b0e8da9b92f83fe8
+    explanation:
+      en: Halyards are lines used to hoist sails. Each mast must have at least two, and each must be capable of hoisting a sail.
+      de: Fallreeps sind Leinen zum Setzen von Segeln. Jeder Mast muss mindestens zwei davon haben, und jedes Fallreep muss ein Segel setzen können.

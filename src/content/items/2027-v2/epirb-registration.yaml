@@ -1,0 +1,18 @@
+id: epirb-registration
+drawing: epirb-registration
+rules:
+  - 4.19.4
+name:
+  en: EPIRB registration
+  de: EPIRB-Registrierung (EPIRB Registration)
+applies:
+  osr2:
+    section: chart-table
+    order: 50
+    pages:
+      - 18
+    cardHash: sha256:c245d60c75d121d0181e7e35f5a4d0d3e7f06516cc21bc4fed763b369cae8f76
+    sourceHash: sha256:bd83b542b85e09e29dc58aea1a7e3eb5c1e173530c7a35614da8c0a076c85a71
+    explanation:
+      en: Every EPIRB carried on the boat must be registered with the appropriate authority for the country code in its 15-character hexadecimal ID. If that country has no registration facility and permits direct registration, the beacon may instead be registered online with the Cospas-Sarsat IBRD.
+      de: Jede an Bord mitgeführte EPIRB muss bei der zuständigen Behörde des Landes registriert sein, dessen Ländercode in der 15-stelligen Hexadezimal-ID der Bake steht. Bietet dieses Land keine Registrierungsstelle an und erlaubt es die direkte Registrierung, kann die Bake online bei der Cospas-Sarsat-IBRD registriert werden.

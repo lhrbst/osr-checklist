@@ -1,0 +1,28 @@
+id: grab-bag-whistle
+drawing: grab-bag-whistle
+rules:
+  - 4.21.4
+name:
+  en: Grab-bag whistle
+  de: Signalpfeife in der Notfalltasche (Whistle)
+applies:
+  osr3:
+    section: grab-bag
+    order: 70
+    pages:
+      - 17
+    cardHash: sha256:fa82948800a46459b9df0c867a38b9e466f71e3ec35b3f3a5344b8a9d8fbefed
+    sourceHash: sha256:562d37b39a07d7b23740fb3a0f66cb0a89db7c8c1040780a5c2a96582e883908
+    explanation:
+      en: The grab-bag whistle is a whistle carried with the liferaft or in a grab bag. OSR 3 requires one whistle; if kept in a grab bag, the bag must be readily accessible even when the boat is inverted. No type or rating is specified.
+      de: Die Pfeife für die Grab Bag wird zusammen mit der Rettungsinsel oder in einer Grab Bag mitgeführt. OSR 3 verlangt eine Pfeife; wird sie in der Grab Bag aufbewahrt, muss diese auch bei kieloben liegendem Boot leicht zugänglich sein. Bauart oder Kennwerte sind nicht festgelegt.
+  osr3-liferaft:
+    section: grab-bag
+    order: 70
+    pages:
+      - 18
+    cardHash: sha256:fa82948800a46459b9df0c867a38b9e466f71e3ec35b3f3a5344b8a9d8fbefed
+    sourceHash: sha256:778aa199285963bf7bb09977927ef50b477d784f0ea64d9a6b067d79318d129a
+    explanation:
+      en: The grab-bag whistle is a whistle carried with the liferaft or in a grab bag. OSR 3 requires one whistle; if kept in a grab bag, the bag must be readily accessible even when the boat is inverted. No type or rating is specified.
+      de: Die Pfeife für die Grab Bag wird zusammen mit der Rettungsinsel oder in einer Grab Bag mitgeführt. OSR 3 verlangt eine Pfeife; wird sie in der Grab Bag aufbewahrt, muss diese auch bei kieloben liegendem Boot leicht zugänglich sein. Bauart oder Kennwerte sind nicht festgelegt.

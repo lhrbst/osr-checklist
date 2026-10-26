@@ -1,0 +1,18 @@
+id: construction-certificate
+drawing: construction-certificate
+rules:
+  - "3.03"
+name:
+  en: Construction standards certificate
+  de: Nachweis der Baustandards (Construction Standards Certificate)
+applies:
+  osr2:
+    section: chart-table
+    order: 20
+    pages:
+      - 7
+    cardHash: sha256:c1bc5f1b0c34ce6eafc579f701969ac3c6afddb0e4fb20136026026d60f4f3b6
+    sourceHash: sha256:899622521a2e3250b9f0eac265a2dfc96a31965a7e9e18a678a7dd90f1d38e74
+    explanation:
+      en: For a monohull with a series date after 2009 and a length under 24 m LH, one of the listed ways to meet the construction standard is to be designed and built to ISO 12215 Category A, maintained so it would still meet that category, and have a building-plan review certificate issued by an organisation recognised by World Sailing. The certificate is evidence of the plan review; the text gives no separate certificate requirement for boats outside this stated group.
+      de: "Für Einrumpfboote mit einer Seriennummer nach 2009 und einer Länge unter 24 m LH ist eine der genannten Möglichkeiten, den Baustandard zu erfüllen: Das Boot muss nach ISO 12215 Kategorie A entworfen und gebaut sowie so instand gehalten sein, dass es diese Kategorie weiterhin erfüllt; außerdem ist eine Bescheinigung über die Bauplanprüfung durch eine von World Sailing anerkannte Organisation erforderlich. Die Bescheinigung belegt die Planprüfung; für Boote außerhalb dieser genannten Gruppe nennt der Text keine gesonderte Bescheinigungspflicht."

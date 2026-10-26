@@ -1,0 +1,48 @@
+id: lifeline-materials-diameters
+drawing: lifeline-materials-diameters
+rules:
+  - 3.14.3
+name:
+  en: Lifeline materials and diameters
+  de: Material und Durchmesser der Relingsdrähte (Lifeline Specifications)
+applies:
+  osr2:
+    section: general
+    order: 90
+    pages:
+      - 12
+    cardHash: sha256:dadccbcfcce7ab92432775824d1c1c98fdee0a69b6bcfbe12a6db0d21569480e
+    sourceHash: sha256:3a1399ff53fdf2fd1301379d283f37d3d100e5a172d41d0d46afb8e06af0eeb1
+    explanation:
+      en: Lifelines must be stranded stainless-steel wire; their minimum diameter is referred to in Table 5, but that table is not included in the supplied text, so no size can be stated here. Stainless wire must be uncoated and normally unsleeved; any temporary sleeve must be removed regularly for inspection. A synthetic-rope lanyard may close a gap of up to 100 mm and must be replaced annually, and every part of the lifeline system must have at least the lifeline’s breaking strength.
+      de: Die Lifelines müssen aus Edelstahl-Drahtseil bestehen; der Mindestdurchmesser ist in Tabelle 5 angegeben, die im vorliegenden Text jedoch fehlt. Das Edelstahldrahtseil muss unbeschichtet und grundsätzlich ohne eng anliegende Ummantelung verwendet werden; eine vorübergehende Ummantelung muss regelmäßig zur Kontrolle entfernt werden. Eine Leine aus synthetischem Tauwerk darf einen Spalt von höchstens 100 mm schließen und muss jährlich ersetzt werden; alle Teile des Lifelinesystems müssen mindestens die Bruchfestigkeit der Lifeline erreichen.
+  osr3:
+    section: general
+    order: 100
+    pages:
+      - 11
+    cardHash: sha256:dadccbcfcce7ab92432775824d1c1c98fdee0a69b6bcfbe12a6db0d21569480e
+    sourceHash: sha256:de4ce724f12c838b3b060acf2224ef5117a398ea2b360d8052ad6a6b6df4058e
+    explanation:
+      en: The text requires stranded stainless-steel-wire lifelines. Table 5 gives minimum wire diameters of 3 mm for boats under 8.5 m, 4 mm for boats from 8.5 m to 13 m, and 5 mm for boats over 13 m; it also lists HMPE sizes, although the stated material requirement in this category is stainless wire. The wire must be uncoated and normally unsleeved; any synthetic-rope lanyard may close no more than a 100 mm gap and must be replaced annually, and system components must be at least as strong as the lifeline.
+      de: Der Text verlangt Lifelines aus Edelstahl-Drahtseil. Tabelle 5 nennt dafür Mindestdurchmesser von 3 mm bei Booten unter 8,5 m, 4 mm bei 8,5 bis 13 m und 5 mm bei über 13 m; sie führt außerdem HMPE-Maße auf, obwohl diese Kategorie als Material Edelstahl-Drahtseil nennt. Das Drahtseil muss unbeschichtet und grundsätzlich ohne eng anliegende Ummantelung verwendet werden; eine Leine aus synthetischem Tauwerk darf höchstens einen 100-mm-Spalt schließen und muss jährlich ersetzt werden. Alle Teile des Lifelinesystems müssen mindestens die Bruchfestigkeit der Lifeline erreichen.
+  osr3-liferaft:
+    section: general
+    order: 100
+    pages:
+      - 11
+    cardHash: sha256:dadccbcfcce7ab92432775824d1c1c98fdee0a69b6bcfbe12a6db0d21569480e
+    sourceHash: sha256:de4ce724f12c838b3b060acf2224ef5117a398ea2b360d8052ad6a6b6df4058e
+    explanation:
+      en: The text requires stranded stainless-steel-wire lifelines. Table 5 gives minimum wire diameters of 3 mm for boats under 8.5 m, 4 mm for boats from 8.5 m to 13 m, and 5 mm for boats over 13 m; it also lists HMPE sizes, although the stated material requirement in this category is stainless wire. The wire must be uncoated and normally unsleeved; any synthetic-rope lanyard may close no more than a 100 mm gap and must be replaced annually, and system components must be at least as strong as the lifeline.
+      de: Der Text verlangt Lifelines aus Edelstahl-Drahtseil. Tabelle 5 nennt dafür Mindestdurchmesser von 3 mm bei Booten unter 8,5 m, 4 mm bei 8,5 bis 13 m und 5 mm bei über 13 m; sie führt außerdem HMPE-Maße auf, obwohl diese Kategorie als Material Edelstahl-Drahtseil nennt. Das Drahtseil muss unbeschichtet und grundsätzlich ohne eng anliegende Ummantelung verwendet werden; eine Leine aus synthetischem Tauwerk darf höchstens einen 100-mm-Spalt schließen und muss jährlich ersetzt werden. Alle Teile des Lifelinesystems müssen mindestens die Bruchfestigkeit der Lifeline erreichen.
+  osr4:
+    section: general
+    order: 90
+    pages:
+      - 10
+    cardHash: sha256:dadccbcfcce7ab92432775824d1c1c98fdee0a69b6bcfbe12a6db0d21569480e
+    sourceHash: sha256:2daf8bc8e6ca3956dcb439da3757e1b1c3798fc0a62a1f53501651d2f1913c0e
+    explanation:
+      en: Lifelines may be stranded stainless-steel wire or HMPE, and Table 5 is referenced for their minimum diameters, but its values are not included in the supplied text. Stainless wire must be uncoated and normally unsleeved; any temporary sleeve must be removed regularly for inspection. A synthetic-rope lanyard may close a gap of up to 100 mm and must be replaced annually, all system components must be at least as strong as the lifeline, and HMPE must be chafe-protected and spliced as its manufacturer recommends.
+      de: Lifelines dürfen aus Edelstahl-Drahtseil oder HMPE bestehen; die Mindestdurchmesser sollen in Tabelle 5 stehen, deren Werte im vorliegenden Text jedoch fehlen. Edelstahldrahtseil muss unbeschichtet und grundsätzlich ohne eng anliegende Ummantelung verwendet werden; eine vorübergehende Ummantelung muss regelmäßig zur Kontrolle entfernt werden. Eine Leine aus synthetischem Tauwerk darf einen Spalt von höchstens 100 mm schließen und muss jährlich ersetzt werden; alle Systemteile müssen mindestens die Bruchfestigkeit der Lifeline erreichen. HMPE ist vor Scheuern zu schützen und nach den empfohlenen Verfahren des Herstellers zu spleißen.

@@ -1,0 +1,18 @@
+id: keel-rudder-inspection-certificate
+drawing: keel-rudder-inspection-certificate
+rules:
+  - 3.02.2
+name:
+  en: Keel and rudder inspection certificate
+  de: Prüfbescheinigung für Kiel und Ruder (Keel and Rudder Inspection Certificate)
+applies:
+  osr2:
+    section: chart-table
+    order: 10
+    pages:
+      - 7
+    cardHash: sha256:8426f7e2926a4bcdfb2b038f0e52fbb9fd96b35b49bea8045c3d44aa6ea94854
+    sourceHash: sha256:899622521a2e3250b9f0eac265a2dfc96a31965a7e9e18a678a7dd90f1d38e74
+    explanation:
+      en: This item is evidence that the boat’s keel and rudder have been structurally inspected. An independent qualified person must inspect the boat out of the water, checking for visible stress cracks—especially around the keel, hull-to-keel attachment, appendages and other stress points, as well as inside the hull, at backing plates, bolted joints and keel floors; the inspection must have taken place within 24 months before the race starts, or after a grounding if that was later.
+      de: Dieser Nachweis bestätigt die strukturelle Prüfung von Kiel und Ruder. Eine unabhängige, qualifizierte Person muss das Boot an Land untersuchen und auf sichtbare Spannungsrisse achten, besonders am Kiel, am Kiel-Rumpf-Anschluss, an Anhängen und anderen Belastungspunkten sowie im Rumpfinneren, an Gegenplatten, Verschraubungen und Kielwrangen; die Prüfung muss innerhalb der 24 Monate vor dem Rennstart erfolgt sein oder, falls später, nach einer Grundberührung.

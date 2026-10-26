@@ -1,0 +1,38 @@
+id: emergency-drinking-water
+drawing: emergency-drinking-water
+rules:
+  - 3.21.3
+name:
+  en: Emergency drinking water
+  de: Nottrinkwasser (Emergency Drinking Water)
+applies:
+  osr2:
+    section: below-deck
+    order: 90
+    pages:
+      - 13
+    cardHash: sha256:c275077e2f076f312de5a342cfd4addd2b52827cc578a3c21d3458751757ccc0
+    sourceHash: sha256:80e2c42d53f73f4e1645bda9e3b4f8027cf969770dc83c25ab4ae76ea65db72f
+    explanation:
+      en: This is a reserve of drinking water for emergency use. For OSR 2, carry at least 2 L (0.5 US gal) per person in one or more dedicated, sealed containers.
+      de: Das ist ein Trinkwasservorrat für Notfälle. Für OSR 2 sind mindestens 2 Liter pro Person in einem oder mehreren dafür vorgesehenen, versiegelten Behältern mitzuführen.
+  osr3:
+    section: below-deck
+    order: 90
+    pages:
+      - 12
+    cardHash: sha256:c275077e2f076f312de5a342cfd4addd2b52827cc578a3c21d3458751757ccc0
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This is a reserve of drinking water for emergency use. For OSR 3, carry at least 2 L (0.5 US gal) per person in one or more dedicated, sealed containers.
+      de: Das ist ein Trinkwasservorrat für Notfälle. Für OSR 3 sind mindestens 2 Liter pro Person in einem oder mehreren dafür vorgesehenen, versiegelten Behältern mitzuführen.
+  osr3-liferaft:
+    section: below-deck
+    order: 90
+    pages:
+      - 12
+    cardHash: sha256:c275077e2f076f312de5a342cfd4addd2b52827cc578a3c21d3458751757ccc0
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This is a reserve of drinking water for emergency use. For OSR 3 with liferaft, carry at least 2 L (0.5 US gal) per person in one or more dedicated, sealed containers.
+      de: Das ist ein Trinkwasservorrat für Notfälle. Für OSR 3 mit Rettungsinsel sind mindestens 2 Liter pro Person in einem oder mehreren dafür vorgesehenen, versiegelten Behältern mitzuführen.

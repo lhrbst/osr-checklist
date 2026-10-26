@@ -1,0 +1,38 @@
+id: fuel-battery-endurance
+drawing: fuel-battery-endurance
+rules:
+  - 3.28.3
+name:
+  en: Fuel or battery endurance
+  de: Brennstoff- oder Batteriereserve (Fuel or Battery Capacity)
+applies:
+  osr2:
+    section: general
+    order: 190
+    pages:
+      - 14
+    cardHash: sha256:8cae9c74b7554108032d4d144c82bf70a73285e56be728491bf66286ee3b9729
+    sourceHash: sha256:16cb8a9ea3b4fd5c29578265a8522bcba17c08263e6b382e472298939e57de31
+    explanation:
+      en: The provided OSR 2 text requires liquid-fuel tanks to be rigid (they may have permanently installed flexible linings) and fitted with a shutoff valve. It gives no fuel-duration or battery-endurance requirement.
+      de: Der vorliegende OSR-2-Text verlangt starre Tanks für flüssige Kraftstoffe; fest eingebaute flexible Innenauskleidungen sind zulässig. Jeder Tank muss ein Absperrventil haben; eine Vorgabe zur Kraftstoff- oder Batterieausdauer ist hier nicht enthalten.
+  osr3:
+    section: general
+    order: 200
+    pages:
+      - 13
+    cardHash: sha256:8cae9c74b7554108032d4d144c82bf70a73285e56be728491bf66286ee3b9729
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: At the start, a boat with a combustion engine must carry enough fuel for the race’s charging needs and to motor for at least 5 hours at the specified minimum speed. A boat with an electric engine must carry enough battery capacity for the race’s electrical needs and to motor at that speed for at least 5 hours.
+      de: Zu Beginn muss ein Boot mit Verbrennungsmotor genügend Kraftstoff für den Ladebedarf während des Rennens sowie für mindestens 5 Stunden Motorfahrt mit der vorgeschriebenen Mindestgeschwindigkeit an Bord haben. Ein Boot mit Elektromotor muss genügend Batteriekapazität für den elektrischen Bedarf während des Rennens und für mindestens 5 Stunden Motorfahrt mit dieser Geschwindigkeit mitführen.
+  osr3-liferaft:
+    section: general
+    order: 200
+    pages:
+      - 13
+    cardHash: sha256:8cae9c74b7554108032d4d144c82bf70a73285e56be728491bf66286ee3b9729
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: At the start, a boat with a combustion engine must carry enough fuel for the race’s charging needs and to motor for at least 5 hours at the specified minimum speed. A boat with an electric engine must carry enough battery capacity for the race’s electrical needs and to motor at that speed for at least 5 hours.
+      de: Zu Beginn muss ein Boot mit Verbrennungsmotor genügend Kraftstoff für den Ladebedarf während des Rennens sowie für mindestens 5 Stunden Motorfahrt mit der vorgeschriebenen Mindestgeschwindigkeit an Bord haben. Ein Boot mit Elektromotor muss genügend Batteriekapazität für den elektrischen Bedarf während des Rennens und für mindestens 5 Stunden Motorfahrt mit dieser Geschwindigkeit mitführen.

@@ -1,0 +1,48 @@
+id: sail-letters-numbers
+drawing: sail-letters-numbers
+rules:
+  - 4.01.1
+name:
+  en: Sail letters and numbers
+  de: Segelzeichen und Segelnummern (Sail Letters and Numbers)
+applies:
+  osr2:
+    section: general
+    order: 210
+    pages:
+      - 16
+    cardHash: sha256:49d8e843f2320805cf22ed45acb1f5f6b4923f69aee0c3f292f29f3117e616eb
+    sourceHash: sha256:18dc1e7e115127c2f4fa9d95ac21dcf348fcba3a8e005ac042e9df9b30bb27bd
+    explanation:
+      en: Your sails must display the boat’s identification in accordance with RRS 77 and Appendix G. This requirement specifies no quantity or size beyond those rules.
+      de: Die Segel müssen die Kennzeichnung des Bootes gemäß RRS 77 und Anhang G tragen. Diese Vorschrift nennt keine darüber hinausgehende Anzahl oder Größe.
+  osr3:
+    section: general
+    order: 230
+    pages:
+      - 15
+    cardHash: sha256:49d8e843f2320805cf22ed45acb1f5f6b4923f69aee0c3f292f29f3117e616eb
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: Your sails must display the boat’s identification in accordance with RRS 77 and Appendix G. This requirement specifies no quantity or size beyond those rules.
+      de: Die Segel müssen die Kennzeichnung des Bootes gemäß RRS 77 und Anhang G tragen. Diese Vorschrift nennt keine darüber hinausgehende Anzahl oder Größe.
+  osr3-liferaft:
+    section: general
+    order: 230
+    pages:
+      - 15
+    cardHash: sha256:49d8e843f2320805cf22ed45acb1f5f6b4923f69aee0c3f292f29f3117e616eb
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: Your sails must display the boat’s identification in accordance with RRS 77 and Appendix G. This requirement specifies no quantity or size beyond those rules.
+      de: Die Segel müssen die Kennzeichnung des Bootes gemäß RRS 77 und Anhang G tragen. Diese Vorschrift nennt keine darüber hinausgehende Anzahl oder Größe.
+  osr4:
+    section: general
+    order: 150
+    pages:
+      - 13
+    cardHash: sha256:49d8e843f2320805cf22ed45acb1f5f6b4923f69aee0c3f292f29f3117e616eb
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
+    explanation:
+      en: Your sails must display the boat’s identification in accordance with RRS 77 and Appendix G. This requirement specifies no quantity or size beyond those rules.
+      de: Die Segel müssen die Kennzeichnung des Bootes gemäß RRS 77 und Anhang G tragen. Diese Vorschrift nennt keine darüber hinausgehende Anzahl oder Größe.

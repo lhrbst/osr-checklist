@@ -1,0 +1,48 @@
+id: distress-flares
+drawing: distress-flares
+rules:
+  - "4.23"
+name:
+  en: Distress flares and smoke
+  de: Handfackeln und Rauchsignale (Flares and Smoke Signals)
+applies:
+  osr2:
+    section: bunks
+    order: 80
+    pages:
+      - 20
+    cardHash: sha256:5c6a1596603bd3398bacf57fc0141794d50a806059a225e6f3490a7cc5bac514
+    sourceHash: sha256:47a4897c570a091b9eb2a520d90d99df380f0b77d2017921be9bdaedcaaab09d
+    explanation:
+      en: Carry 2 orange smoke signals and, for MoMu 0–3, 4 red hand flares. They must conform to LSA Code Chapter III, sections 3.3 and 3.2 respectively, and be within any stamped expiry date—or no more than 4 years old if no expiry date is stamped.
+      de: Mitzuführen sind 2 orange Rauchsignale sowie für MoMu 0–3 4 rote Handfackeln. Sie müssen dem LSA-Code, Kapitel III, Abschnitte 3.3 beziehungsweise 3.2, entsprechen und dürfen das aufgedruckte Ablaufdatum nicht überschritten haben; ohne Ablaufdatum dürfen sie höchstens 4 Jahre alt sein.
+  osr3:
+    section: bunks
+    order: 60
+    pages:
+      - 17
+    cardHash: sha256:5c6a1596603bd3398bacf57fc0141794d50a806059a225e6f3490a7cc5bac514
+    sourceHash: sha256:562d37b39a07d7b23740fb3a0f66cb0a89db7c8c1040780a5c2a96582e883908
+    explanation:
+      en: Carry 2 orange smoke signals and, for MoMu 0–3, 4 red hand flares. They must conform to LSA Code Chapter III, sections 3.3 and 3.2 respectively, and be within any stamped expiry date—or no more than 4 years old if no expiry date is stamped.
+      de: Mitzuführen sind 2 orange Rauchsignale sowie für MoMu 0–3 4 rote Handfackeln. Sie müssen dem LSA-Code, Kapitel III, Abschnitte 3.3 beziehungsweise 3.2, entsprechen und dürfen das aufgedruckte Ablaufdatum nicht überschritten haben; ohne Ablaufdatum dürfen sie höchstens 4 Jahre alt sein.
+  osr3-liferaft:
+    section: bunks
+    order: 60
+    pages:
+      - 19
+    cardHash: sha256:5c6a1596603bd3398bacf57fc0141794d50a806059a225e6f3490a7cc5bac514
+    sourceHash: sha256:61a4c8afc9cc2db9ff641e274e3dc2b3f7b91d3b04dbe5a6cf522186cc008993
+    explanation:
+      en: Carry 2 orange smoke signals and, for MoMu 0–3, 4 red hand flares. They must conform to LSA Code Chapter III, sections 3.3 and 3.2 respectively, and be within any stamped expiry date—or no more than 4 years old if no expiry date is stamped.
+      de: Mitzuführen sind 2 orange Rauchsignale sowie für MoMu 0–3 4 rote Handfackeln. Sie müssen dem LSA-Code, Kapitel III, Abschnitte 3.3 beziehungsweise 3.2, entsprechen und dürfen das aufgedruckte Ablaufdatum nicht überschritten haben; ohne Ablaufdatum dürfen sie höchstens 4 Jahre alt sein.
+  osr4:
+    section: bunks
+    order: 60
+    pages:
+      - 14
+    cardHash: sha256:aaa49238618b5921edf23ecd5a037ed9a443c8ec1c4d61f82bdfdf36ddf58ae1
+    sourceHash: sha256:0204fbe6a4b0071964c50e5609b62923a9e1a4411fd9e4c8c7df129b23a41514
+    explanation:
+      en: Carry 2 orange smoke signals conforming to LSA Code Chapter III, section 3.3. They must be within any stamped expiry date, or no more than 4 years old if no expiry date is stamped; this category’s text does not specify red hand flares.
+      de: Mitzuführen sind 2 orange Rauchsignale nach LSA-Code, Kapitel III, Abschnitt 3.3. Sie dürfen das aufgedruckte Ablaufdatum nicht überschritten haben; ohne Ablaufdatum dürfen sie höchstens 4 Jahre alt sein. Für diese Kategorie nennt der Text keine roten Handfackeln.

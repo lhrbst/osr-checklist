@@ -1,0 +1,48 @@
+id: safety-equipment-location-chart
+drawing: safety-equipment-location-chart
+rules:
+  - "4.12"
+name:
+  en: Safety equipment location chart
+  de: Stauplan der Sicherheitsausrüstung (Safety Equipment Location Chart)
+applies:
+  osr2:
+    section: below-deck
+    order: 190
+    pages:
+      - 17
+    cardHash: sha256:ac5ac15bc5520a846ba01b57e8f05f879f336d6d497e41f57c70686a092d4280
+    sourceHash: sha256:2944ac73b833a8482dad24a4619e48db0d67abc52c4e6a5fd3ef8f91e4afc411
+    explanation:
+      en: Have a safety-equipment location diagram made of durable, waterproof material. Display it clearly in the main accommodation and mark where the principal safety equipment is kept; no size or specific format is stated.
+      de: An Bord muss ein dauerhaftes, wasserdichtes Sicherheitsausrüstungsdiagramm vorhanden sein. Es muss im Hauptwohnbereich gut sichtbar angebracht sein und die Standorte der wichtigsten Sicherheitsausrüstung zeigen; Größe und Format sind nicht festgelegt.
+  osr3:
+    section: below-deck
+    order: 190
+    pages:
+      - 16
+    cardHash: sha256:ac5ac15bc5520a846ba01b57e8f05f879f336d6d497e41f57c70686a092d4280
+    sourceHash: sha256:a3f01b0e4a5ced00bcac81b885ce22061d4d154145e3e4e31bb161998bb57fee
+    explanation:
+      en: Have a safety-equipment location diagram made of durable, waterproof material. Display it clearly in the main accommodation and mark where the principal safety equipment is kept; no size or specific format is stated.
+      de: An Bord muss ein dauerhaftes, wasserdichtes Sicherheitsausrüstungsdiagramm vorhanden sein. Es muss im Hauptwohnbereich gut sichtbar angebracht sein und die Standorte der wichtigsten Sicherheitsausrüstung zeigen; Größe und Format sind nicht festgelegt.
+  osr3-liferaft:
+    section: below-deck
+    order: 190
+    pages:
+      - 16
+    cardHash: sha256:ac5ac15bc5520a846ba01b57e8f05f879f336d6d497e41f57c70686a092d4280
+    sourceHash: sha256:35a1fa40999bd9cb9f6f6c497e5d81ffa5c1cbc6dcaba6296f91b702074922eb
+    explanation:
+      en: Have a safety-equipment location diagram made of durable, waterproof material. Display it clearly in the main accommodation and mark where the principal safety equipment is kept; no size or specific format is stated.
+      de: An Bord muss ein dauerhaftes, wasserdichtes Sicherheitsausrüstungsdiagramm vorhanden sein. Es muss im Hauptwohnbereich gut sichtbar angebracht sein und die Standorte der wichtigsten Sicherheitsausrüstung zeigen; Größe und Format sind nicht festgelegt.
+  osr4:
+    section: below-deck
+    order: 130
+    pages:
+      - 13
+    cardHash: sha256:ac5ac15bc5520a846ba01b57e8f05f879f336d6d497e41f57c70686a092d4280
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
+    explanation:
+      en: Have a safety-equipment location diagram made of durable, waterproof material. Display it clearly in the main accommodation and mark where the principal safety equipment is kept; no size or specific format is stated.
+      de: An Bord muss ein dauerhaftes, wasserdichtes Sicherheitsausrüstungsdiagramm vorhanden sein. Es muss im Hauptwohnbereich gut sichtbar angebracht sein und die Standorte der wichtigsten Sicherheitsausrüstung zeigen; Größe und Format sind nicht festgelegt.

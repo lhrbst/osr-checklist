@@ -1,0 +1,28 @@
+id: liferaft-stowage
+drawing: liferaft-stowage
+rules:
+  - 4.20.3
+name:
+  en: Liferaft stowage
+  de: Stauung der Rettungsinsel (Liferaft Stowage)
+applies:
+  osr2:
+    section: on-deck
+    order: 60
+    pages:
+      - 18
+    cardHash: sha256:5610bc258df3d8aa37db769d5cc738c412d4521849ea542429bfbcbd6c9bc908
+    sourceHash: sha256:bd83b542b85e09e29dc58aea1a7e3eb5c1e173530c7a35614da8c0a076c85a71
+    explanation:
+      en: Each liferaft must be packed in a rigid container and securely stowed on the working deck, in the cockpit, or in an open space. The text provided for this category gives no other stowage requirements.
+      de: Jede Rettungsinsel muss in einem festen Behälter verpackt und sicher an Deck, im Cockpit oder in einem offenen Bereich verstaut sein. Der vorliegende Text für diese Kategorie enthält keine weiteren Vorgaben zur Stauung.
+  osr3-liferaft:
+    section: on-deck
+    order: 60
+    pages:
+      - 17
+    cardHash: sha256:5610bc258df3d8aa37db769d5cc738c412d4521849ea542429bfbcbd6c9bc908
+    sourceHash: sha256:1794eaf8e01b00f18674501f5bfb8ed8ffa4cd7783c3c365718c029d4d0d52a5
+    explanation:
+      en: Each liferaft must be in a rigid container stowed on deck, in the cockpit or in an open space, or in a rigid container or valise in a dedicated, readily accessible, watertight locker. That locker may contain only the liferaft and abandon-ship equipment, and must open onto the cockpit, working deck or transom; on a movable-ballast monohull or a multihull, the raft must be deployable even if the boat is inverted. The painter’s end should be secured to the boat, and each raft must be movable to the lifelines or launchable within 15 seconds.
+      de: Jede Rettungsinsel muss entweder in einem festen Behälter an Deck, im Cockpit oder in einem offenen Bereich verstaut sein, oder in einem festen Behälter beziehungsweise einer Tasche in einem eigenen, gut zugänglichen, wasserdichten Stauraum. Dieser Stauraum darf nur die Rettungsinsel und Ausrüstung zum Verlassen des Bootes enthalten und muss sich zum Cockpit, Deck oder Spiegel öffnen lassen; bei Mehrrumpfbooten und Einrumpfbooten mit beweglichem Ballast muss die Insel auch bei gekentertem Boot ausgebracht werden können. Das Ende der Zugleine sollte am Boot befestigt sein; jede Insel muss innerhalb von 15 Sekunden zu den Relings gebracht oder zu Wasser gelassen werden können.

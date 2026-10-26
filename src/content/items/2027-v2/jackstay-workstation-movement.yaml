@@ -1,0 +1,38 @@
+id: jackstay-workstation-movement
+drawing: jackstay-workstation-movement
+rules:
+  - 4.04.2
+name:
+  en: Clipped-on movement between workstations
+  de: Eingepickte Bewegung zwischen Arbeitsplätzen (Jackstay Movement)
+applies:
+  osr2:
+    section: demonstrate-use
+    order: 50
+    pages:
+      - 16
+    cardHash: sha256:87846f652a2738a9bae6487a7441f958ed6d219e213d1be883f12ac21125cc53
+    sourceHash: sha256:18dc1e7e115127c2f4fa9d95ac21dcf348fcba3a8e005ac042e9df9b30bb27bd
+    explanation:
+      en: This requirement covers the jackstays used to clip on while moving around the boat. They must be independent on the two sides of the deck, let a crew member move between deck work areas and the cockpit(s) with as few clip-on and unclip operations as possible, and have a breaking strength of at least 2,040 kg (4,500 lb). They must be uncoated, unsleeved 1×19 stainless-steel wire at least 5 mm (3/16 in) in diameter, webbing, or HMPE rope.
+      de: Diese Vorschrift betrifft die Jackstays, an denen sich die Crew beim Bewegen an Deck einpicken kann. Sie müssen auf beiden Decksseiten unabhängig voneinander verlaufen, den Weg zwischen Arbeitsbereichen an Deck und Cockpit(s) mit möglichst wenigen Ein- und Auspickvorgängen ermöglichen und eine Bruchlast von mindestens 2.040 kg (4.500 lb) haben. Zulässig sind unbeschichtetes, nicht ummanteltes Edelstahlseil in 1×19-Konstruktion mit mindestens 5 mm Durchmesser, Gurtband oder HMPE-Tauwerk.
+  osr3:
+    section: demonstrate-use
+    order: 50
+    pages:
+      - 15
+    cardHash: sha256:87846f652a2738a9bae6487a7441f958ed6d219e213d1be883f12ac21125cc53
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: This requirement covers the jackstays used to clip on while moving around the boat. They must be independent on the two sides of the deck, let a crew member move between deck work areas and the cockpit(s) with as few clip-on and unclip operations as possible, and have a breaking strength of at least 2,040 kg (4,500 lb). They must be uncoated, unsleeved 1×19 stainless-steel wire at least 5 mm (3/16 in) in diameter, webbing, or HMPE rope.
+      de: Diese Vorschrift betrifft die Jackstays, an denen sich die Crew beim Bewegen an Deck einpicken kann. Sie müssen auf beiden Decksseiten unabhängig voneinander verlaufen, den Weg zwischen Arbeitsbereichen an Deck und Cockpit(s) mit möglichst wenigen Ein- und Auspickvorgängen ermöglichen und eine Bruchlast von mindestens 2.040 kg (4.500 lb) haben. Zulässig sind unbeschichtetes, nicht ummanteltes Edelstahlseil in 1×19-Konstruktion mit mindestens 5 mm Durchmesser, Gurtband oder HMPE-Tauwerk.
+  osr3-liferaft:
+    section: demonstrate-use
+    order: 50
+    pages:
+      - 15
+    cardHash: sha256:87846f652a2738a9bae6487a7441f958ed6d219e213d1be883f12ac21125cc53
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: This requirement covers the jackstays used to clip on while moving around the boat. They must be independent on the two sides of the deck, let a crew member move between deck work areas and the cockpit(s) with as few clip-on and unclip operations as possible, and have a breaking strength of at least 2,040 kg (4,500 lb). They must be uncoated, unsleeved 1×19 stainless-steel wire at least 5 mm (3/16 in) in diameter, webbing, or HMPE rope.
+      de: Diese Vorschrift betrifft die Jackstays, an denen sich die Crew beim Bewegen an Deck einpicken kann. Sie müssen auf beiden Decksseiten unabhängig voneinander verlaufen, den Weg zwischen Arbeitsbereichen an Deck und Cockpit(s) mit möglichst wenigen Ein- und Auspickvorgängen ermöglichen und eine Bruchlast von mindestens 2.040 kg (4.500 lb) haben. Zulässig sind unbeschichtetes, nicht ummanteltes Edelstahlseil in 1×19-Konstruktion mit mindestens 5 mm Durchmesser, Gurtband oder HMPE-Tauwerk.

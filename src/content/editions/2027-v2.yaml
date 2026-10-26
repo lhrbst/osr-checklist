@@ -1,5 +1,7 @@
 id: 2027-v2
-label: { en: "2027 (Version 2)", de: "2027 (Version 2)" }
+label:
+  en: 2027 (Version 2)
+  de: 2027 (Version 2)
 effectiveFrom: 2027-01-01
 effectiveTo: 2027-12-31
 pdfs:
@@ -8,9 +10,43 @@ pdfs:
   osr3-liferaft: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo3Life_2027-2027_v2.pdf
   osr4: https://www.sailing.org/wp-content/uploads/2026/06/Extract-Mo4_2027-2027_v2.pdf
 sections:
+  - id: chart-table
+    officialTitle: Lay out on Chart Table or Other Surface
+    title:
+      en: Chart table or other surface
+      de: Kartentisch oder andere Ablage
   - id: bunks
-    title: { en: "Lay out on bunks", de: "Auf den Kojen auslegen" }
-    officialTitle: "Lay out on Bunk(s)"
-  - id: rigged
-    title: { en: "Rigged or fitted to demonstrate use", de: "Montiert, Funktion vorführen" }
-    officialTitle: "Rigged/Fitted to Demonstrate Use"
+    officialTitle: Lay out on Bunk(s)
+    title:
+      en: Lay out on bunks
+      de: Auf den Kojen auslegen
+  - id: grab-bag
+    officialTitle: Grab Bag
+    title:
+      en: Grab bag
+      de: Notfalltasche
+  - id: below-deck
+    officialTitle: Below Deck Inspection
+    title:
+      en: Below deck
+      de: Unter Deck
+  - id: helm
+    officialTitle: At Helm or Ready for Immediate Deployment
+    title:
+      en: At helm or immediately deployable
+      de: Am Steuerstand oder sofort einsatzbereit
+  - id: on-deck
+    officialTitle: On Deck, Where Stowed or Ready for Deployment
+    title:
+      en: On deck, stowed or ready
+      de: An Deck, verstaut oder einsatzbereit
+  - id: demonstrate-use
+    officialTitle: Rigged/Fitted to Demonstrate Use
+    title:
+      en: Rigged for demonstration
+      de: Zur Vorführung aufgebaut
+  - id: general
+    officialTitle: General
+    title:
+      en: General
+      de: Allgemeines

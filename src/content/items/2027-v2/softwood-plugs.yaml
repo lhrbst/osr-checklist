@@ -1,0 +1,48 @@
+id: softwood-plugs
+drawing: softwood-plugs
+rules:
+  - "4.03"
+name:
+  en: Tapered softwood plugs
+  de: Konische Weichholzpfropfen (Soft Wood Plugs)
+applies:
+  osr2:
+    section: below-deck
+    order: 160
+    pages:
+      - 16
+    cardHash: sha256:33b4294e2e06fc6f04973302901d498425414ea7aec0383b3ea1273b2a0112b7
+    sourceHash: sha256:18dc1e7e115127c2f4fa9d95ac21dcf348fcba3a8e005ac042e9df9b30bb27bd
+    explanation:
+      en: Keep a tapered plug made of soft wood beside every through-hull opening. The rule specifies no plug dimensions or additional ratings.
+      de: Neben jeder Rumpfdurchführung muss ein konischer Stopfen aus Weichholz liegen. Maße oder zusätzliche Anforderungen an den Stopfen sind nicht angegeben.
+  osr3:
+    section: below-deck
+    order: 160
+    pages:
+      - 15
+    cardHash: sha256:33b4294e2e06fc6f04973302901d498425414ea7aec0383b3ea1273b2a0112b7
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: Keep a tapered plug made of soft wood beside every through-hull opening. The rule specifies no plug dimensions or additional ratings.
+      de: Neben jeder Rumpfdurchführung muss ein konischer Stopfen aus Weichholz liegen. Maße oder zusätzliche Anforderungen an den Stopfen sind nicht angegeben.
+  osr3-liferaft:
+    section: below-deck
+    order: 160
+    pages:
+      - 15
+    cardHash: sha256:33b4294e2e06fc6f04973302901d498425414ea7aec0383b3ea1273b2a0112b7
+    sourceHash: sha256:e258709be87e35add65e3327f2dc279284945befd2999f87ee08882374e09af6
+    explanation:
+      en: Keep a tapered plug made of soft wood beside every through-hull opening. The rule specifies no plug dimensions or additional ratings.
+      de: Neben jeder Rumpfdurchführung muss ein konischer Stopfen aus Weichholz liegen. Maße oder zusätzliche Anforderungen an den Stopfen sind nicht angegeben.
+  osr4:
+    section: below-deck
+    order: 100
+    pages:
+      - 13
+    cardHash: sha256:33b4294e2e06fc6f04973302901d498425414ea7aec0383b3ea1273b2a0112b7
+    sourceHash: sha256:6dd78d6481f978b54fd3aaa5e1cfbd509de8e7183f2bd855778a0bc1025dce8f
+    explanation:
+      en: Keep a tapered plug made of soft wood beside every through-hull opening. The rule specifies no plug dimensions or additional ratings.
+      de: Neben jeder Rumpfdurchführung muss ein konischer Stopfen aus Weichholz liegen. Maße oder zusätzliche Anforderungen an den Stopfen sind nicht angegeben.

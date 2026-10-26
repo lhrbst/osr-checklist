@@ -1,0 +1,48 @@
+id: equipment-condition-accessibility
+drawing: equipment-condition-accessibility
+rules:
+  - "2.04"
+name:
+  en: Equipment condition and accessibility
+  de: Zustand und Zugänglichkeit der Ausrüstung (Equipment Requirements)
+applies:
+  osr2:
+    section: general
+    order: 10
+    pages:
+      - 6
+    cardHash: sha256:289ea1e92e2dc7bb980d4f19627a9e2870d0792bfb7442614e1674979e451978
+    sourceHash: sha256:6a631cc0dee3edff0159ff3a71599c6fa1af4fc01ef33275cb8a7befa74c671f
+    explanation:
+      en: This requirement covers equipment required by the Offshore Special Regulations. It must work properly, be checked, cleaned and serviced regularly, remain within its expiry date while racing if it has one, be stored to limit deterioration when not in use, and be readily accessible; its type, size and capacity must suit its intended use and the boat. Heavy items must be permanently installed or securely fastened.
+      de: Diese Vorgabe betrifft die nach den Offshore Special Regulations vorgeschriebene Ausrüstung. Sie muss einwandfrei funktionieren, regelmäßig kontrolliert, gereinigt und gewartet werden, während der Wettfahrt gegebenenfalls noch gültig sein, bei Nichtgebrauch möglichst schonend gelagert und leicht zugänglich sein; Art, Größe und Kapazität müssen zum Verwendungszweck und zum Boot passen. Schwere Gegenstände müssen fest eingebaut oder sicher befestigt sein.
+  osr3:
+    section: general
+    order: 10
+    pages:
+      - 6
+    cardHash: sha256:289ea1e92e2dc7bb980d4f19627a9e2870d0792bfb7442614e1674979e451978
+    sourceHash: sha256:8f8c1061d73f2a99647c857f13d2ccc39d822bcb38b4c7d4fb403966b848df3a
+    explanation:
+      en: This requirement covers equipment required by the Offshore Special Regulations. It must work properly, be checked, cleaned and serviced regularly, remain within its expiry date while racing if it has one, be stored to limit deterioration when not in use, and be readily accessible; its type, size and capacity must suit its intended use and the boat. Heavy items must be permanently installed or securely fastened.
+      de: Diese Vorgabe betrifft die nach den Offshore Special Regulations vorgeschriebene Ausrüstung. Sie muss einwandfrei funktionieren, regelmäßig kontrolliert, gereinigt und gewartet werden, während der Wettfahrt gegebenenfalls noch gültig sein, bei Nichtgebrauch möglichst schonend gelagert und leicht zugänglich sein; Art, Größe und Kapazität müssen zum Verwendungszweck und zum Boot passen. Schwere Gegenstände müssen fest eingebaut oder sicher befestigt sein.
+  osr3-liferaft:
+    section: general
+    order: 10
+    pages:
+      - 6
+    cardHash: sha256:289ea1e92e2dc7bb980d4f19627a9e2870d0792bfb7442614e1674979e451978
+    sourceHash: sha256:8f8c1061d73f2a99647c857f13d2ccc39d822bcb38b4c7d4fb403966b848df3a
+    explanation:
+      en: This requirement covers equipment required by the Offshore Special Regulations. It must work properly, be checked, cleaned and serviced regularly, remain within its expiry date while racing if it has one, be stored to limit deterioration when not in use, and be readily accessible; its type, size and capacity must suit its intended use and the boat. Heavy items must be permanently installed or securely fastened.
+      de: Diese Vorgabe betrifft die nach den Offshore Special Regulations vorgeschriebene Ausrüstung. Sie muss einwandfrei funktionieren, regelmäßig kontrolliert, gereinigt und gewartet werden, während der Wettfahrt gegebenenfalls noch gültig sein, bei Nichtgebrauch möglichst schonend gelagert und leicht zugänglich sein; Art, Größe und Kapazität müssen zum Verwendungszweck und zum Boot passen. Schwere Gegenstände müssen fest eingebaut oder sicher befestigt sein.
+  osr4:
+    section: general
+    order: 10
+    pages:
+      - 6
+    cardHash: sha256:289ea1e92e2dc7bb980d4f19627a9e2870d0792bfb7442614e1674979e451978
+    sourceHash: sha256:ad3a7adaa3fe24a1af631a7ddecb6bb62730701b3a9c6da5d0c6916974369400
+    explanation:
+      en: This requirement covers equipment required by the Offshore Special Regulations. It must work properly, be checked, cleaned and serviced regularly, remain within its expiry date while racing if it has one, be stored to limit deterioration when not in use, and be readily accessible; its type, size and capacity must suit its intended use and the boat. Heavy items must be permanently installed or securely fastened.
+      de: Diese Vorgabe betrifft die nach den Offshore Special Regulations vorgeschriebene Ausrüstung. Sie muss einwandfrei funktionieren, regelmäßig kontrolliert, gereinigt und gewartet werden, während der Wettfahrt gegebenenfalls noch gültig sein, bei Nichtgebrauch möglichst schonend gelagert und leicht zugänglich sein; Art, Größe und Kapazität müssen zum Verwendungszweck und zum Boot passen. Schwere Gegenstände müssen fest eingebaut oder sicher befestigt sein.

@@ -1,0 +1,38 @@
+id: lifejacket-spare-cylinders
+drawing: lifejacket-spare-cylinders
+rules:
+  - 5.01.2
+name:
+  en: Spare cylinders and activation heads
+  de: Ersatzpatronen und Auslöseköpfe (Spare Cylinders and Activation Heads)
+applies:
+  osr2:
+    section: bunks
+    order: 100
+    pages:
+      - 23
+    cardHash: sha256:5f57d1fcdb8b235ecd24df3e10e984d7be1cffc0feb7c53ff3aecb3f55f9efd9
+    sourceHash: sha256:f7ab4570452c85222c71e59fc724efc2f68c45a10b164d9df7d57dcaac227d95
+    explanation:
+      en: Carry at least one spare gas cylinder for inflatable lifejackets, plus a spare activation head if needed, for each type of lifejacket on board. The rule gives no further size or rating requirements for these spares.
+      de: Für jeden an Bord befindlichen Typ einer aufblasbaren Rettungsweste muss mindestens eine Ersatzgaspatrone mitgeführt werden; falls erforderlich, auch ein Ersatz-Auslösekopf. Weitere Anforderungen an Größe oder Leistung der Ersatzteile nennt die Regel nicht.
+  osr3:
+    section: bunks
+    order: 80
+    pages:
+      - 20
+    cardHash: sha256:5f57d1fcdb8b235ecd24df3e10e984d7be1cffc0feb7c53ff3aecb3f55f9efd9
+    sourceHash: sha256:5ce3c93fa51e86d288cb3ab2072876e8bbfee57aa3acdffc64bd452e8bd17cfd
+    explanation:
+      en: Carry at least one spare gas cylinder for inflatable lifejackets, plus a spare activation head if needed, for each type of lifejacket on board. The rule gives no further size or rating requirements for these spares.
+      de: Für jeden an Bord befindlichen Typ einer aufblasbaren Rettungsweste muss mindestens eine Ersatzgaspatrone mitgeführt werden; falls erforderlich, auch ein Ersatz-Auslösekopf. Weitere Anforderungen an Größe oder Leistung der Ersatzteile nennt die Regel nicht.
+  osr3-liferaft:
+    section: bunks
+    order: 80
+    pages:
+      - 22
+    cardHash: sha256:5f57d1fcdb8b235ecd24df3e10e984d7be1cffc0feb7c53ff3aecb3f55f9efd9
+    sourceHash: sha256:edaa3421ff7bb456a022c9e1ddf14e8e2f88bebc1df90fcbe7dcb5dd96975fa4
+    explanation:
+      en: Carry at least one spare gas cylinder for inflatable lifejackets, plus a spare activation head if needed, for each type of lifejacket on board. The rule gives no further size or rating requirements for these spares.
+      de: Für jeden an Bord befindlichen Typ einer aufblasbaren Rettungsweste muss mindestens eine Ersatzgaspatrone mitgeführt werden; falls erforderlich, auch ein Ersatz-Auslösekopf. Weitere Anforderungen an Größe oder Leistung der Ersatzteile nennt die Regel nicht.
