@@ -1,0 +1,48 @@
+id: storm-sail-sheeting-positions
+drawing: storm-sail-sheeting-positions
+rules:
+  - 4.27.1
+name:
+  en: Heavy-weather sail sheeting positions
+  de: Schotführungen für Starkwind- und Sturmsegel (Sheeting Positions)
+applies:
+  osr2:
+    section: demonstrate-use
+    order: 130
+    pages:
+      - 21
+    cardHash: sha256:b09480c59c2d0b4b49f3b7737301031597ef03e4a84d133224948551f880621f
+    sourceHash: sha256:881650519fd0651a1f34b9925c0c1e15e4dbe8d53fb812881826cbac0550acd3
+    explanation:
+      en: The boat must have deck sheeting positions for every storm and heavy-weather sail. The rule gives no number or dimensions for these positions.
+      de: Für jedes Sturm- und Starkwindsegel müssen auf Deck Schotpositionen vorhanden sein. Die Vorschrift nennt dafür weder eine Anzahl noch Maße.
+  osr3:
+    section: demonstrate-use
+    order: 120
+    pages:
+      - 18
+    cardHash: sha256:b09480c59c2d0b4b49f3b7737301031597ef03e4a84d133224948551f880621f
+    sourceHash: sha256:f09698f529e6b08132109e727af6ec609997a3c17a73bbf0c7f89663ff19b4ad
+    explanation:
+      en: The boat must have deck sheeting positions for every storm and heavy-weather sail. The rule gives no number or dimensions for these positions.
+      de: Für jedes Sturm- und Starkwindsegel müssen auf Deck Schotpositionen vorhanden sein. Die Vorschrift nennt dafür weder eine Anzahl noch Maße.
+  osr3-liferaft:
+    section: demonstrate-use
+    order: 120
+    pages:
+      - 20
+    cardHash: sha256:b09480c59c2d0b4b49f3b7737301031597ef03e4a84d133224948551f880621f
+    sourceHash: sha256:2bdc5a81f87c72623f453a03e5763ac34c8cdf249d5dc1ca509b6d5b0e527604
+    explanation:
+      en: The boat must have deck sheeting positions for every storm and heavy-weather sail. The rule gives no number or dimensions for these positions.
+      de: Für jedes Sturm- und Starkwindsegel müssen auf Deck Schotpositionen vorhanden sein. Die Vorschrift nennt dafür weder eine Anzahl noch Maße.
+  osr4:
+    section: demonstrate-use
+    order: 40
+    pages:
+      - 14
+    cardHash: sha256:b09480c59c2d0b4b49f3b7737301031597ef03e4a84d133224948551f880621f
+    sourceHash: sha256:0204fbe6a4b0071964c50e5609b62923a9e1a4411fd9e4c8c7df129b23a41514
+    explanation:
+      en: The boat must have deck sheeting positions for every storm and heavy-weather sail. The rule gives no number or dimensions for these positions.
+      de: Für jedes Sturm- und Starkwindsegel müssen auf Deck Schotpositionen vorhanden sein. Die Vorschrift nennt dafür weder eine Anzahl noch Maße.

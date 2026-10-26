@@ -1,0 +1,49 @@
+id: handheld-vhf
+drawing: handheld-vhf
+rules:
+  - 3.29.1
+  - 3.29.2
+name:
+  en: Watertight handheld VHF
+  de: Wasserdichtes UKW-Handfunkgerät (Hand-held Marine VHF Transceiver)
+applies:
+  osr2:
+    section: grab-bag
+    order: 10
+    pages:
+      - 15
+    cardHash: sha256:0ce2e7444e003c9d453126639f3295b54c5a41b35435988e8c6d77ef99634cca
+    sourceHash: sha256:75fc5e83b4abce3cee2a14583b094a9c3b3982645c5bb9b10f6bca226bc5423d
+    explanation:
+      en: The boat must carry a handheld marine VHF radio for each grab bag. Each radio must provide at least 5 W, be watertight or have a waterproof cover, and be kept in the grab bag when not in use.
+      de: Für jede Grab Bag muss ein tragbares UKW-Seefunkgerät an Bord sein. Jedes Gerät muss mindestens 5 W Sendeleistung haben, wasserdicht sein oder eine wasserdichte Schutzhülle besitzen und bei Nichtgebrauch in der Grab Bag aufbewahrt werden.
+  osr3:
+    section: grab-bag
+    order: 10
+    pages:
+      - 14
+    cardHash: sha256:0ce2e7444e003c9d453126639f3295b54c5a41b35435988e8c6d77ef99634cca
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: The boat must carry a handheld marine VHF radio for each grab bag. Each radio must provide at least 5 W, be watertight or have a waterproof cover, and be kept in the grab bag when not in use.
+      de: Für jede Grab Bag muss ein tragbares UKW-Seefunkgerät an Bord sein. Jedes Gerät muss mindestens 5 W Sendeleistung haben, wasserdicht sein oder eine wasserdichte Schutzhülle besitzen und bei Nichtgebrauch in der Grab Bag aufbewahrt werden.
+  osr3-liferaft:
+    section: grab-bag
+    order: 10
+    pages:
+      - 14
+    cardHash: sha256:0ce2e7444e003c9d453126639f3295b54c5a41b35435988e8c6d77ef99634cca
+    sourceHash: sha256:15bded81fc188f0ab130762e90839bea3ac2c7035b70379e6440f3f058aeda25
+    explanation:
+      en: The boat must carry a handheld marine VHF radio for each grab bag. Each radio must provide at least 5 W, be watertight or have a waterproof cover, and be kept in the grab bag when not in use.
+      de: Für jede Grab Bag muss ein tragbares UKW-Seefunkgerät an Bord sein. Jedes Gerät muss mindestens 5 W Sendeleistung haben, wasserdicht sein oder eine wasserdichte Schutzhülle besitzen und bei Nichtgebrauch in der Grab Bag aufbewahrt werden.
+  osr4:
+    section: bunks
+    order: 10
+    pages:
+      - 12
+    cardHash: sha256:2bd292891c33297df2f5d22dbcdcbc08d944ce945e9b93264739adbba3b10c25
+    sourceHash: sha256:8109faf1b364189c4a08a3612a838f89e4dc639f94b1a0e45d97bca7b0f22045
+    explanation:
+      en: A Mo4 boat must carry a handheld marine VHF radio. It must be watertight or have a waterproof cover; this text does not specify a minimum output power or a quantity per grab bag.
+      de: Ein Boot der Kategorie Mo4 muss ein tragbares UKW-Seefunkgerät mitführen. Es muss wasserdicht sein oder eine wasserdichte Schutzhülle besitzen; eine Mindest-Sendeleistung oder eine Anzahl pro Grab Bag ist hier nicht festgelegt.

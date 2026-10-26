@@ -1,0 +1,38 @@
+id: short-tethers-intermediate-hooks
+drawing: short-tethers-intermediate-hooks
+rules:
+  - 5.02.3
+name:
+  en: Short tethers or intermediate hooks
+  de: Kurze Sicherheitsleinen oder Zwischenhaken (Short Tethers or Mid-tether Hooks)
+applies:
+  osr2:
+    section: bunks
+    order: 150
+    pages:
+      - 23
+    cardHash: sha256:c15fb7ff9463f09ab2458fabe06f7c42560405daf2dab662185f3d695c464db1
+    sourceHash: sha256:f7ab4570452c85222c71e59fc724efc2f68c45a10b164d9df7d57dcaac227d95
+    explanation:
+      en: Each crewmember must have either a tether no longer than 1 m (including its hook or hooks), or a 2 m tether with an intermediate self-closing hook. The 2 m maximum includes the hook length.
+      de: Jedes Crewmitglied muss entweder eine Leine mit höchstens 1 m Länge (einschließlich Haken) oder eine 2-m-Leine mit einem zusätzlichen selbstschließenden Zwischenhaken haben. Bei der 2-m-Leine zählt die Hakenlänge zur Gesamtlänge.
+  osr3:
+    section: bunks
+    order: 120
+    pages:
+      - 20
+    cardHash: sha256:c15fb7ff9463f09ab2458fabe06f7c42560405daf2dab662185f3d695c464db1
+    sourceHash: sha256:5ce3c93fa51e86d288cb3ab2072876e8bbfee57aa3acdffc64bd452e8bd17cfd
+    explanation:
+      en: Each crewmember must have either a tether no longer than 1 m (including its hook or hooks), or a 2 m tether with an intermediate self-closing hook. The 2 m maximum includes the hook length.
+      de: Jedes Crewmitglied muss entweder eine Leine mit höchstens 1 m Länge (einschließlich Haken) oder eine 2-m-Leine mit einem zusätzlichen selbstschließenden Zwischenhaken haben. Bei der 2-m-Leine zählt die Hakenlänge zur Gesamtlänge.
+  osr3-liferaft:
+    section: bunks
+    order: 120
+    pages:
+      - 22
+    cardHash: sha256:c15fb7ff9463f09ab2458fabe06f7c42560405daf2dab662185f3d695c464db1
+    sourceHash: sha256:edaa3421ff7bb456a022c9e1ddf14e8e2f88bebc1df90fcbe7dcb5dd96975fa4
+    explanation:
+      en: Each crewmember must have either a tether no longer than 1 m (including its hook or hooks), or a 2 m tether with an intermediate self-closing hook. The 2 m maximum includes the hook length.
+      de: Jedes Crewmitglied muss entweder eine Leine mit höchstens 1 m Länge (einschließlich Haken) oder eine 2-m-Leine mit einem zusätzlichen selbstschließenden Zwischenhaken haben. Bei der 2-m-Leine zählt die Hakenlänge zur Gesamtlänge.

@@ -1,0 +1,18 @@
+id: personal-ais-beacons
+drawing: personal-ais-beacons
+rules:
+  - 4.22.1
+name:
+  en: Personal AIS overboard beacons
+  de: Persönliche AIS-MOB-Sender (AIS Personal Crew Overboard Beacons)
+applies:
+  osr2:
+    section: bunks
+    order: 60
+    pages:
+      - 19
+    cardHash: sha256:89e1303e75ad7749f781e2e6a1b4f8cde68cb7c0c49838fc21dcd33a8f447a45
+    sourceHash: sha256:41b43dfb746c4983958c2b9ae40cb4b42383b68acbc50faa6761853ea8ceb9f1
+    explanation:
+      en: Each crewmember must have one personal AIS crew-overboard beacon. Where possible, each PLB must be registered with the authority for the country code in its 15-character hexadecimal ID; if that country has no registration facility and permits direct registration, it can be registered with the Cospas-Sarsat IBRD.
+      de: Jedes Crewmitglied muss eine persönliche AIS-MOB-Bake mitführen. Soweit möglich, muss jede PLB bei der für das Land der 15-stelligen hexadezimalen Kennung zuständigen Behörde registriert werden; bietet das Land keine Registrierungsmöglichkeit und erlaubt es die direkte Registrierung, kann die PLB im Cospas-Sarsat-IBRD registriert werden.

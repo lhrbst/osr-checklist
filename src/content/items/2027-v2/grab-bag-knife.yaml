@@ -1,0 +1,28 @@
+id: grab-bag-knife
+drawing: grab-bag-knife
+rules:
+  - 4.21.4
+name:
+  en: Grab-bag knife
+  de: Messer in der Notfalltasche (Knife)
+applies:
+  osr3:
+    section: grab-bag
+    order: 60
+    pages:
+      - 17
+    cardHash: sha256:3d4d101cd7ea9e5effe950710492bda210dde6cfaec5efdfaccd18dbc9e5241c
+    sourceHash: sha256:562d37b39a07d7b23740fb3a0f66cb0a89db7c8c1040780a5c2a96582e883908
+    explanation:
+      en: The boat must carry one knife, stowed either with a liferaft or in a grab bag. If it is in a grab bag, the bag must be accessible even when the boat is inverted.
+      de: An Bord muss sich ein Messer befinden, das entweder bei einer Rettungsinsel oder in einer Grab Bag verstaut ist. Liegt es in der Grab Bag, muss diese auch bei gekentertem Boot zugänglich sein.
+  osr3-liferaft:
+    section: grab-bag
+    order: 60
+    pages:
+      - 18
+    cardHash: sha256:3d4d101cd7ea9e5effe950710492bda210dde6cfaec5efdfaccd18dbc9e5241c
+    sourceHash: sha256:778aa199285963bf7bb09977927ef50b477d784f0ea64d9a6b067d79318d129a
+    explanation:
+      en: The boat must carry one knife, stowed either with a liferaft or in a grab bag. If it is in a grab bag, the bag must be accessible even when the boat is inverted.
+      de: An Bord muss sich ein Messer befinden, das entweder bei einer Rettungsinsel oder in einer Grab Bag verstaut ist. Liegt es in der Grab Bag, muss diese auch bei gekentertem Boot zugänglich sein.

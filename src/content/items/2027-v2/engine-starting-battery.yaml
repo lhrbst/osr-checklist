@@ -1,0 +1,38 @@
+id: engine-starting-battery
+drawing: engine-starting-battery
+rules:
+  - 3.28.4
+name:
+  en: Separate starting battery or hand start
+  de: Separate Starterbatterie oder Handstart (Starting Battery or Hand-starting Device)
+applies:
+  osr2:
+    section: below-deck
+    order: 130
+    pages:
+      - 15
+    cardHash: sha256:b162f11f1988554537c2251f98517e9ad493f8167a1a3f34004ecb30bc327615
+    sourceHash: sha256:75fc5e83b4abce3cee2a14583b094a9c3b3982645c5bb9b10f6bca226bc5423d
+    explanation:
+      en: A dedicated battery for starting the engine and/or a separate generator is required if an electric starter is the only way to start it. The rule gives no battery size or rating; it does not require a separate starting battery where hand starting is available.
+      de: Eine eigene Batterie zum Starten des Motors und/oder eines separaten Generators ist vorgeschrieben, wenn ein Elektrostarter die einzige Startmöglichkeit ist. Eine bestimmte Batteriegröße oder Leistung ist nicht angegeben; bei möglichem Handstart verlangt die Regel keine separate Starterbatterie.
+  osr3:
+    section: below-deck
+    order: 130
+    pages:
+      - 13
+    cardHash: sha256:b162f11f1988554537c2251f98517e9ad493f8167a1a3f34004ecb30bc327615
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: A dedicated battery for starting the engine and/or a separate generator is required if an electric starter is the only way to start it. The rule gives no battery size or rating; it does not require a separate starting battery where hand starting is available.
+      de: Eine eigene Batterie zum Starten des Motors und/oder eines separaten Generators ist vorgeschrieben, wenn ein Elektrostarter die einzige Startmöglichkeit ist. Eine bestimmte Batteriegröße oder Leistung ist nicht angegeben; bei möglichem Handstart verlangt die Regel keine separate Starterbatterie.
+  osr3-liferaft:
+    section: below-deck
+    order: 130
+    pages:
+      - 13
+    cardHash: sha256:b162f11f1988554537c2251f98517e9ad493f8167a1a3f34004ecb30bc327615
+    sourceHash: sha256:e9339fd413b8ff88c1f1d2a734b5f69d7edd1a7710c26994adb539805fa71c7f
+    explanation:
+      en: A dedicated battery for starting the engine and/or a separate generator is required if an electric starter is the only way to start it. The rule gives no battery size or rating; it does not require a separate starting battery where hand starting is available.
+      de: Eine eigene Batterie zum Starten des Motors und/oder eines separaten Generators ist vorgeschrieben, wenn ein Elektrostarter die einzige Startmöglichkeit ist. Eine bestimmte Batteriegröße oder Leistung ist nicht angegeben; bei möglichem Handstart verlangt die Regel keine separate Starterbatterie.

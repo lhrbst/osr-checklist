@@ -1,0 +1,28 @@
+id: liferaft-capacity
+drawing: liferaft-capacity
+rules:
+  - 4.20.1
+name:
+  en: Liferaft capacity for whole crew
+  de: Rettungsinsel für die gesamte Crew (Liferaft Capacity)
+applies:
+  osr2:
+    section: on-deck
+    order: 40
+    pages:
+      - 18
+    cardHash: sha256:2e9a938dae2b41f6c56ebc464e6fd3e414590bb13bd7b82dd5f290dab88a3088
+    sourceHash: sha256:bd83b542b85e09e29dc58aea1a7e3eb5c1e173530c7a35614da8c0a076c85a71
+    explanation:
+      en: For MoMu 1 and 2 boats, carry one or more inflatable liferafts with enough total places for everyone on board. The raft(s) must comply with the 1997 LSA Code, Chapter IV, or a later version; alternatively, qualifying ISO 9650-1:2005 Type 1 Group A rafts, pre-2016 ISAF rafts, or pre-2003 ORC rafts are accepted under the stated conditions.
+      de: Boote der Kategorien MoMu 1 und 2 müssen eine oder mehrere aufblasbare Rettungsinseln mit genügend Plätzen für alle Personen an Bord mitführen. Die Insel(n) müssen Kapitel IV des LSA-Codes von 1997 oder einer späteren Fassung entsprechen; alternativ werden ISO-9650-1:2005-Inseln des Typs 1, Gruppe A sowie ISAF-Inseln von vor 2016 oder ORC-Inseln von vor 2003 unter den jeweils genannten Bedingungen anerkannt.
+  osr3-liferaft:
+    section: on-deck
+    order: 40
+    pages:
+      - 16
+    cardHash: sha256:2e9a938dae2b41f6c56ebc464e6fd3e414590bb13bd7b82dd5f290dab88a3088
+    sourceHash: sha256:35a1fa40999bd9cb9f6f6c497e5d81ffa5c1cbc6dcaba6296f91b702074922eb
+    explanation:
+      en: For MoMu 1 and 2 boats, carry one or more inflatable liferafts with enough total places for everyone on board. The excerpt specifies compliance with Chapter IV of the 1997 LSA Code or a later version.
+      de: Boote der Kategorien MoMu 1 und 2 müssen eine oder mehrere aufblasbare Rettungsinseln mit genügend Plätzen für alle Personen an Bord mitführen. Der vorliegende Auszug nennt als Anforderung die Einhaltung von Kapitel IV des LSA-Codes von 1997 oder einer späteren Fassung.

@@ -5,7 +5,7 @@ import { CATEGORIES, CATEGORY_LABEL } from "../../src/lib/categories";
 import { editionSchema, itemSchema } from "../../src/lib/schemas";
 
 const readYaml = (path: string) => parse(readFileSync(path, "utf8"));
-const seedItem = () => readYaml("src/content/items/2027-v2/jackstays.yaml");
+const seedItem = () => readYaml("tests/fixtures/content/jackstays.yaml");
 
 describe("categories", () => {
   it("lists the four monohull categories in order", () => {
@@ -42,6 +42,6 @@ describe("itemSchema", () => {
 
 describe("editionSchema", () => {
   it("accepts the seed 2027-v2 manifest", () => {
-    expect(editionSchema.safeParse(readYaml("src/content/editions/2027-v2.yaml")).success).toBe(true);
+    expect(editionSchema.safeParse(readYaml("tests/fixtures/content/edition-2027-v2.yaml")).success).toBe(true);
   });
 });

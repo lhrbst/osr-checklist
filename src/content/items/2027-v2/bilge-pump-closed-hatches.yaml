@@ -1,0 +1,48 @@
+id: bilge-pump-closed-hatches
+drawing: bilge-pump-closed-hatches
+rules:
+  - 3.23.2
+name:
+  en: Bilge-pump operation with hatches closed
+  de: Lenzen bei geschlossenen Luken (Bilge Pump Operation)
+applies:
+  osr2:
+    section: general
+    order: 130
+    pages:
+      - 13
+    cardHash: sha256:ffeec45d945b7211447909b87e2ada470bf61fcf7aeaff69656ef3ba3e36451b
+    sourceHash: sha256:80e2c42d53f73f4e1645bda9e3b4f8027cf969770dc83c25ab4ae76ea65db72f
+    explanation:
+      en: This requirement covers whether the required fixed bilge pumps can be operated when the boat is shut up. Both permanently installed manual pumps—one operable from above and one from below deck—must work with cockpit seats, hatches and companionways closed, and have permanently installed discharge pipes of sufficient capacity.
+      de: Diese Vorschrift betrifft die Bedienbarkeit der vorgeschriebenen festen Bilgenpumpen bei geschlossenem Boot. Beide fest eingebauten Handpumpen – eine von oben und eine von unter Deck bedienbar – müssen bei geschlossenen Cockpitsitzen, Luken und Niedergängen funktionieren; ihre fest verlegten Abläufe müssen ausreichend dimensioniert sein.
+  osr3:
+    section: general
+    order: 140
+    pages:
+      - 12
+    cardHash: sha256:ffeec45d945b7211447909b87e2ada470bf61fcf7aeaff69656ef3ba3e36451b
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This requirement covers whether the required fixed bilge pumps can be operated when the boat is shut up. The permanently installed manual pump required for the listed OSR 3 categories must work with cockpit seats, hatches and companionways closed, and have a permanently installed discharge pipe of sufficient capacity.
+      de: Diese Vorschrift betrifft die Bedienbarkeit der vorgeschriebenen festen Bilgenpumpen bei geschlossenem Boot. Die für die aufgeführten OSR-3-Kategorien vorgeschriebene fest eingebaute Handpumpe muss bei geschlossenen Cockpitsitzen, Luken und Niedergängen funktionieren; ihr fest verlegter Ablauf muss ausreichend dimensioniert sein.
+  osr3-liferaft:
+    section: general
+    order: 140
+    pages:
+      - 12
+    cardHash: sha256:ffeec45d945b7211447909b87e2ada470bf61fcf7aeaff69656ef3ba3e36451b
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: This requirement covers whether the required fixed bilge pumps can be operated when the boat is shut up. The permanently installed manual pump required for the listed OSR 3 categories must work with cockpit seats, hatches and companionways closed, and have a permanently installed discharge pipe of sufficient capacity.
+      de: Diese Vorschrift betrifft die Bedienbarkeit der vorgeschriebenen festen Bilgenpumpen bei geschlossenem Boot. Die für die aufgeführten OSR-3-Kategorien vorgeschriebene fest eingebaute Handpumpe muss bei geschlossenen Cockpitsitzen, Luken und Niedergängen funktionieren; ihr fest verlegter Ablauf muss ausreichend dimensioniert sein.
+  osr4:
+    section: general
+    order: 120
+    pages:
+      - 11
+    cardHash: sha256:ffeec45d945b7211447909b87e2ada470bf61fcf7aeaff69656ef3ba3e36451b
+    sourceHash: sha256:3e805f4d3506548a3f18ba87c516b788b7725c3057faa7b9b0e8da9b92f83fe8
+    explanation:
+      en: This requirement covers whether any required permanently installed bilge pumps can be operated when the boat is shut up. They must work with cockpit seats, hatches and companionways closed, and have permanently installed discharge pipes of sufficient capacity; the category also requires one manual bilge pump, without stating here that it must be permanently installed.
+      de: Diese Vorschrift betrifft die Bedienbarkeit vorgeschriebener fest eingebauter Bilgenpumpen bei geschlossenem Boot. Sie müssen bei geschlossenen Cockpitsitzen, Luken und Niedergängen funktionieren und fest verlegte, ausreichend dimensionierte Abläufe haben; außerdem ist eine Handlenzpumpe vorgeschrieben, ohne dass hier ihre feste Installation verlangt wird.

@@ -1,0 +1,38 @@
+id: stability-proof
+drawing: stability-proof
+rules:
+  - 3.04.1
+name:
+  en: Stability proof
+  de: Stabilitätsnachweis (Stability Proof)
+applies:
+  osr2:
+    section: chart-table
+    order: 30
+    pages:
+      - 8
+    cardHash: sha256:3e0acb01cd39d478aebe0fa682260747618a78f08345e4ba2142cc64345994b8
+    sourceHash: sha256:97acc23d384adb5afc1e86762273ee8aad4197c424a72f83dc79926fd535b26c
+    explanation:
+      en: For a Category 2 monohull, stability must meet ISO 12217-2 design category A. If that cannot be shown, the boat may instead meet one of the alternatives in OSR 3.04.2, 3.04.3 or 3.04.4; compliance can be evidenced by CE certification or the designer’s declaration.
+      de: Ein Einrumpfboot der Kategorie 2 muss die Stabilitätsanforderungen der Konstruktionskategorie A nach ISO 12217-2 erfüllen. Lässt sich das nicht nachweisen, kann das Boot stattdessen eine der Alternativen nach OSR 3.04.2, 3.04.3 oder 3.04.4 erfüllen; als Nachweis gelten eine CE-Zertifizierung oder die Erklärung des Konstrukteurs.
+  osr3:
+    section: chart-table
+    order: 10
+    pages:
+      - 7
+    cardHash: sha256:4682ddcdde9729cb9f758f0540737091a3398893c886a85d948dc65bc81222f3
+    sourceHash: sha256:5779776d8768c1976798c4be7e40c2b7ef803eb2f149b8be5133b366f6ce89f1
+    explanation:
+      en: A Category 3 monohull must meet ISO 12217-2 design category B or higher, or one of the alternatives in OSR 3.04.2, 3.04.3 or 3.04.4. Compliance can be shown by CE certification or the designer’s declaration.
+      de: Ein Einrumpfboot der Kategorie 3 muss mindestens die Konstruktionskategorie B nach ISO 12217-2 erfüllen oder eine der Alternativen nach OSR 3.04.2, 3.04.3 oder 3.04.4. Als Nachweis gelten eine CE-Zertifizierung oder die Erklärung des Konstrukteurs.
+  osr3-liferaft:
+    section: chart-table
+    order: 10
+    pages:
+      - 7
+    cardHash: sha256:4682ddcdde9729cb9f758f0540737091a3398893c886a85d948dc65bc81222f3
+    sourceHash: sha256:5779776d8768c1976798c4be7e40c2b7ef803eb2f149b8be5133b366f6ce89f1
+    explanation:
+      en: A Category 3 monohull must meet ISO 12217-2 design category B or higher, or one of the alternatives in OSR 3.04.2, 3.04.3 or 3.04.4. Compliance can be shown by CE certification or the designer’s declaration.
+      de: Ein Einrumpfboot der Kategorie 3 muss mindestens die Konstruktionskategorie B nach ISO 12217-2 erfüllen oder eine der Alternativen nach OSR 3.04.2, 3.04.3 oder 3.04.4. Als Nachweis gelten eine CE-Zertifizierung oder die Erklärung des Konstrukteurs.

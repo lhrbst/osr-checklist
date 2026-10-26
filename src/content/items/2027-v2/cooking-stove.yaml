@@ -1,0 +1,38 @@
+id: cooking-stove
+drawing: cooking-stove
+rules:
+  - "3.20"
+name:
+  en: Cooking stove with fuel shut-off
+  de: Kocher mit Brennstoffabsperrung (Cooking Stove)
+applies:
+  osr2:
+    section: below-deck
+    order: 70
+    pages:
+      - 13
+    cardHash: sha256:73673b251ae10be5bc05953a35348a52ee6597c3992ba2677eb19e1d33c14379
+    sourceHash: sha256:80e2c42d53f73f4e1645bda9e3b4f8027cf969770dc83c25ab4ae76ea65db72f
+    explanation:
+      en: The boat must have a cooking stove permanently fitted on board. It must be safe to use at sea and have a control to shut off its fuel; no stove rating or quantity is specified.
+      de: An Bord muss ein fest eingebauter Kocher vorhanden sein. Er muss auf See sicher betrieben werden können und eine Absperrvorrichtung für die Brennstoffzufuhr haben; eine Leistung oder Anzahl ist nicht festgelegt.
+  osr3:
+    section: below-deck
+    order: 70
+    pages:
+      - 12
+    cardHash: sha256:73673b251ae10be5bc05953a35348a52ee6597c3992ba2677eb19e1d33c14379
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: The boat must have a cooking stove permanently fitted on board. It must be safe to use at sea and have a control to shut off its fuel; no stove rating or quantity is specified.
+      de: An Bord muss ein fest eingebauter Kocher vorhanden sein. Er muss auf See sicher betrieben werden können und eine Absperrvorrichtung für die Brennstoffzufuhr haben; eine Leistung oder Anzahl ist nicht festgelegt.
+  osr3-liferaft:
+    section: below-deck
+    order: 70
+    pages:
+      - 12
+    cardHash: sha256:73673b251ae10be5bc05953a35348a52ee6597c3992ba2677eb19e1d33c14379
+    sourceHash: sha256:42a3215fb3c39011529c3fdb495f31988133ebf6847c4bc99cd43f9afc17e1fa
+    explanation:
+      en: The boat must have a cooking stove permanently fitted on board. It must be safe to use at sea and have a control to shut off its fuel; no stove rating or quantity is specified.
+      de: An Bord muss ein fest eingebauter Kocher vorhanden sein. Er muss auf See sicher betrieben werden können und eine Absperrvorrichtung für die Brennstoffzufuhr haben; eine Leistung oder Anzahl ist nicht festgelegt.
