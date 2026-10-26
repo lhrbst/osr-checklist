@@ -1,6 +1,7 @@
 import { execSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { beforeAll, describe, expect, it } from "vitest";
+import { parse } from "yaml";
 import { CATEGORIES, LANGS } from "../src/lib/categories";
 
 const FOOTER = {
@@ -37,8 +38,13 @@ describe("built site", () => {
   });
 
   it("only shows items that apply to the category", () => {
-    expect(page("de", "osr4")).not.toContain('data-item="jackstays"');
-    expect(page("de", "osr3")).toContain('data-item="jackstays"');
+    const dir = "src/content/items/2027-v2";
+    const items = readdirSync(dir).map((f) => parse(readFileSync(`${dir}/${f}`, "utf8")) as { id: string; applies: object });
+    expect(items.length).toBeGreaterThan(0);
+    for (const cat of CATEGORIES) {
+      const html = page("de", cat);
+      for (const item of items) expect(html.includes(`data-item="${item.id}"`), `${item.id} on ${cat}`).toBe(cat in item.applies);
+    }
   });
 
   it("has no copyright footer", () => {

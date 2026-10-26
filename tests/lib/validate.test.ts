@@ -5,9 +5,9 @@ import { editionSchema, itemSchema, type Edition, type Item } from "../../src/li
 import { validateContent } from "../../src/lib/validate";
 
 const edition = (): Edition =>
-  editionSchema.parse(parse(readFileSync("src/content/editions/2027-v2.yaml", "utf8")));
+  editionSchema.parse(parse(readFileSync("tests/fixtures/content/edition-2027-v2.yaml", "utf8")));
 const item = (id: string): Item =>
-  itemSchema.parse(parse(readFileSync(`src/content/items/2027-v2/${id}.yaml`, "utf8")));
+  itemSchema.parse(parse(readFileSync(`tests/fixtures/content/${id}.yaml`, "utf8")));
 
 const valid = () => ({
   editions: [edition()],
